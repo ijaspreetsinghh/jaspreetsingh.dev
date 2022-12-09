@@ -7,12 +7,13 @@ import {
   Col,
   Row,
 } from "@nextui-org/react";
-import { syncopateLink, SyncopateLink } from "../typography/syncopate_text";
+import { syncopateLink } from "../../pages/_app";
 import JaspreetSinghLogo from "./logo";
 import MailIcon from "./mail_icon";
 import ThemeIcon from "./theme_icon";
-
+import { useTheme } from "@nextui-org/react";
 const MyNavBar = () => {
+  const { isDark, type } = useTheme();
   return (
     <Container
       css={{
@@ -75,7 +76,7 @@ const MyNavBar = () => {
               borderLeft: "4px solid $text",
               height: 62,
               paddingTop: 15,
-              background: "#DAF6CC",
+              background: isDark ? "#2e2e2e" : "$green",
 
               justifyContent: "space-evenly",
               "@media (max-width: 650px)": {
@@ -112,7 +113,7 @@ const MyNavBar = () => {
               height: 62,
 
               paddingTop: 15,
-              background: "#DAF6CC",
+              background: isDark ? "#2e2e2e" : "$green",
 
               justifyContent: "space-evenly",
 
