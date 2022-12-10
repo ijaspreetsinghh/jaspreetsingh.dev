@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import { globalCss } from "@nextui-org/react";
+import { Syncopate } from "@next/font/google";
 
 import { NextUIProvider, createTheme } from "@nextui-org/react";
 const globalStyles = globalCss({
@@ -20,29 +21,29 @@ const lightTheme = createTheme({
   type: "light", // it could be "light" or "dark"
   theme: {
     colors: {
-      // brand colors
-      primaryLight: "$green200",
-      primaryLightHover: "$green300",
-      primaryLightActive: "$green400",
-      primaryLightContrast: "$green600",
-      primary: "#f2ed72",
-      text: "#2e2e2e",
-      primaryBorder: "$green500",
-      primaryBorderHover: "$green600",
-      primarySolidHover: "$green700",
-      primarySolidContrast: "$white",
-      primaryShadow: "$green500",
-      background: "#FFFFFF",
-      gradient:
-        "linear-gradient(112deg, $blue100 -25%, $pink500 -10%, $purple500 80%)",
-      link: "#5E1DAD",
-
-      // you can also create your own color
-      myColor: "#f2ed72",
-
+      yellow: "#f2ed72",
+      dark: "#2e2e2e",
+      pink: "#ffb9db",
+      lightOrange: "#ffe3ce",
+      blue: "#c2f4ff",
+      lightYellow: "#ffebb9",
+      periwinkle: "#c0c4e9",
+      lightGreen: "#daf6cc",
+      white: "#ffffff",
+      darkGray: "#3e3e3e",
       // ...  more colors
     },
     space: {},
     fonts: {},
   },
+});
+
+export const syncopate = Syncopate({
+  weight: "700",
+  subsets: ["latin"],
+});
+export const syncopateLink = Syncopate({
+  weight: "700",
+
+  subsets: ["latin"],
 });

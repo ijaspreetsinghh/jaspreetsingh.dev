@@ -1,17 +1,13 @@
-import Head from "next/head";
-import Image from "next/image";
-import { SyncopateText } from "../components/typography/syncopate_text";
-import { Card, Col, Container, Grid, useTheme } from "@nextui-org/react";
+import { Col, Container } from "@nextui-org/react";
+import IntroSection from "../components/sections/intro_section";
 import MyNavBar from "../components/ui_components/navbar";
-import JaspreetSinghLogo from "../components/ui_components/logo";
-import ThemeIcon from "../components/ui_components/theme_icon";
 
 export default function Home() {
   return (
     <>
       <Col
         css={{
-          background: "#c2f4ff",
+          background: "$blue",
           display: "none",
           "@media (max-width: 450px)": {
             display: "block",
@@ -19,11 +15,12 @@ export default function Home() {
         }}>
         <div style={{ padding: 4 }}>
           <MyNavBar />
+          <IntroSection />
         </div>
       </Col>
       <Container
         css={{
-          background: "#c2f4ff",
+          background: "$blue",
           display: "block",
           "@media (max-width: 450px)": {
             display: "none",
@@ -31,7 +28,7 @@ export default function Home() {
         }}
         fluid>
         <Container css={{ height: 16 }}></Container>
-        <MyNavBar />
+        <MyNavBar /> <IntroSection />
       </Container>
     </>
   );

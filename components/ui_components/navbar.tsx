@@ -7,7 +7,7 @@ import {
   Col,
   Row,
 } from "@nextui-org/react";
-import { syncopateLink, SyncopateLink } from "../typography/syncopate_text";
+import { syncopateLink } from "../../pages/_app";
 import JaspreetSinghLogo from "./logo";
 import MailIcon from "./mail_icon";
 import ThemeIcon from "./theme_icon";
@@ -20,11 +20,11 @@ const MyNavBar = () => {
         padding: 0,
         margin: 0,
         height: 70,
-        border: "4px solid $text",
+        border: "4px solid $dark",
         justifyContent: "stretch",
         display: "flex",
       }}
-      xl>
+      fluid>
       <Grid.Container>
         <Grid>
           <Container
@@ -37,7 +37,7 @@ const MyNavBar = () => {
               },
               // paddingRight: 13,
               display: "block",
-              borderRight: "4px solid $text",
+              borderRight: "4px solid $dark",
               width: 66,
               height: 66,
             }}>
@@ -72,7 +72,7 @@ const MyNavBar = () => {
         <Grid xs>
           <Container
             css={{
-              borderLeft: "4px solid $text",
+              borderLeft: "4px solid $dark",
               height: 62,
               paddingTop: 15,
               background: "#DAF6CC",
@@ -103,12 +103,11 @@ const MyNavBar = () => {
             <Spacer x={0} />
           </Container>
         </Grid>
-
         <Grid>
           <Container
             justify='center'
             css={{
-              borderLeft: "4px solid $text",
+              borderLeft: "4px solid $dark",
               height: 62,
 
               paddingTop: 15,
@@ -154,7 +153,7 @@ const MyNavBar = () => {
               margin: 0,
               padding: 0,
               display: "flex",
-              borderLeft: "4px solid $text",
+              borderLeft: "4px solid $dark",
               width: 66,
               "@media (max-width: 650px)": {
                 display: "none",

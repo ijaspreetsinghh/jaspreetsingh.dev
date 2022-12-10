@@ -16,6 +16,15 @@ a {
   box-sizing: border-box;
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: #2e2e2e;
+  background: #f2ed72;
+}
+
+::selection {
+  color: #2e2e2e;
+  background: #f2ed72;
+}
 /* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
