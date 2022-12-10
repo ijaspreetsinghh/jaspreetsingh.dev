@@ -7,12 +7,15 @@ import {
   Col,
   Row,
 } from "@nextui-org/react";
+import Link from "next/link";
+import { useState } from "react";
 import { syncopateLink } from "../../pages/_app";
 import JaspreetSinghLogo from "./logo";
 import MailIcon from "./mail_icon";
+import SocialLinks from "./social_links";
 import ThemeIcon from "./theme_icon";
 
-const MyNavBar = () => {
+const DesktopNavBar = () => {
   return (
     <Container
       css={{
@@ -32,7 +35,7 @@ const MyNavBar = () => {
             css={{
               margin: "auto",
               padding: 0,
-              "@media (max-width: 650px)": {
+              "@media (max-width: 1050px)": {
                 display: "none",
               },
               // paddingRight: 13,
@@ -103,49 +106,7 @@ const MyNavBar = () => {
             <Spacer x={0} />
           </Container>
         </Grid>
-        <Grid>
-          <Container
-            justify='center'
-            css={{
-              borderLeft: "4px solid $dark",
-              height: 62,
 
-              paddingTop: 15,
-              background: "#DAF6CC",
-
-              justifyContent: "space-evenly",
-
-              "@xs": {
-                display: "flex",
-              },
-              "@media (max-width: 450px)": {
-                maxWidth: 90,
-                paddingLeft: 8,
-                paddingTop: 15,
-                paddingRight: 8,
-              },
-              "@sm": {
-                display: "none",
-              },
-            }}>
-            <Text
-              className={syncopateLink.className}
-              css={{
-                fontSize: 18,
-                "@xs": { fontSize: 18 },
-                textAlign: "center",
-                "@media (max-width: 500px)": {
-                  fontSize: 14,
-                  paddingTop: 5,
-                  display: "flex",
-                },
-              }}>
-              MENU
-            </Text>
-
-            <Spacer x={0} />
-          </Container>
-        </Grid>
         <Grid>
           <Container
             alignItems='center'
@@ -155,7 +116,7 @@ const MyNavBar = () => {
               display: "flex",
               borderLeft: "4px solid $dark",
               width: 66,
-              "@media (max-width: 650px)": {
+              "@media (max-width: 1050px)": {
                 display: "none",
               },
               height: 62,
@@ -167,4 +128,187 @@ const MyNavBar = () => {
     </Container>
   );
 };
+
+const MobNavBar = () => {
+  const [isOpen, setOpen] = useState(false);
+
+  return (
+    <Container
+      css={{
+        background: "$background",
+        padding: 0,
+        margin: 0,
+        height: 70,
+        border: "4px solid $dark",
+        justifyContent: "stretch",
+        display: "flex",
+      }}
+      fluid>
+      <Navbar
+        isCompact
+        disableShadow
+        variant={"static"}
+        css={{ margin: 0, padding: 0, background: "$background" }}>
+        <Navbar.Content css={{ margin: 0, padding: 0 }}>
+          <Container
+            css={{
+              margin: 0,
+
+              maxWidth: 300,
+              "@media (max-width: 500px)": {
+                maxWidth: 250,
+              },
+              "@media (max-width: 450px)": {
+                maxWidth: 230,
+              },
+              "@media (max-width: 400px)": {
+                maxWidth: 200,
+                paddingLeft: 8,
+                paddingRight: 8,
+              },
+              display: "flex",
+              height: 62,
+            }}>
+            <Row align='center' css={{ justifyContent: "center" }}>
+              <JaspreetSinghLogo />
+            </Row>
+          </Container>
+        </Navbar.Content>
+        <Navbar.Toggle
+          color='$black'
+          // isSelected={isOpen}
+          // onClick={(e) => {
+          //   setOpen(!isOpen);
+          // }}
+          css={{
+            margin: 0,
+            padding: 0,
+            background: "$background",
+          }}></Navbar.Toggle>
+
+        <Navbar.Collapse
+          // isOpen={isOpen}
+          css={{
+            borderLeft: "4px solid $black",
+
+            borderRight: "4px solid $black",
+          }}>
+          <Navbar.CollapseItem>
+            <Link
+              color='inherit'
+              style={{
+                minWidth: "100%",
+                display: "flex",
+                justifyContent: "flex-end",
+                // background: "red",
+
+                margin: "auto",
+              }}
+              href='#'>
+              <Text
+                className={syncopateLink.className}
+                size={18}
+                css={{ textAlign: "end" }}>
+                HOME
+              </Text>
+            </Link>
+          </Navbar.CollapseItem>
+
+          <Navbar.CollapseItem>
+            <Link
+              color='inherit'
+              style={{
+                minWidth: "100%",
+                display: "flex",
+                justifyContent: "flex-end",
+                // background: "red",
+
+                margin: "auto",
+              }}
+              href='#'>
+              <Text
+                className={syncopateLink.className}
+                size={18}
+                css={{ textAlign: "end" }}>
+                ABOUT
+              </Text>
+            </Link>
+          </Navbar.CollapseItem>
+
+          <Navbar.CollapseItem>
+            <Link
+              color='inherit'
+              style={{
+                minWidth: "100%",
+                display: "flex",
+                justifyContent: "flex-end",
+                // background: "red",
+                margin: "auto",
+              }}
+              href='#'>
+              <Text
+                className={syncopateLink.className}
+                size={18}
+                css={{ textAlign: "end" }}>
+                WORK
+              </Text>
+            </Link>
+          </Navbar.CollapseItem>
+
+          <Navbar.CollapseItem>
+            <Link
+              color='inherit'
+              style={{
+                minWidth: "100%",
+                display: "flex",
+                justifyContent: "flex-end",
+                // background: "red",
+
+                margin: "auto",
+              }}
+              href='#'>
+              <Text
+                className={syncopateLink.className}
+                size={18}
+                css={{ textAlign: "end" }}>
+                CONTACT
+              </Text>
+            </Link>
+          </Navbar.CollapseItem>
+
+          <Navbar.CollapseItem>
+            <Row align='flex-end' justify='flex-end'>
+              <SocialLinks />
+            </Row>
+          </Navbar.CollapseItem>
+        </Navbar.Collapse>
+      </Navbar>
+    </Container>
+  );
+};
+const MyNavBar = () => {
+  return (
+    <div>
+      <Row
+        css={{
+          display: "none",
+          "@media (max-width: 960px)": {
+            display: "block",
+          },
+        }}>
+        <MobNavBar />
+      </Row>
+      <Row
+        css={{
+          display: "block",
+          "@media (max-width: 960px)": {
+            display: "none",
+          },
+        }}>
+        <DesktopNavBar />
+      </Row>
+    </div>
+  );
+};
+
 export default MyNavBar;

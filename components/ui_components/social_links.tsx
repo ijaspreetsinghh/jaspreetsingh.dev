@@ -10,7 +10,7 @@ const SocialLinks = () => {
           src='/linkedin.svg'
           height={42}
           width={42}
-          style={{ display: "flex", margin: "auto", marginBottom: 10 }}
+          style={{ display: "flex", margin: "auto" }}
           alt='LinkedIn Profile'
         />
       </Link>
@@ -21,7 +21,7 @@ const SocialLinks = () => {
           src='/insta.svg'
           height={42}
           width={42}
-          style={{ display: "flex", margin: "auto", marginBottom: 10 }}
+          style={{ display: "flex", margin: "auto" }}
           alt='Instagram Profile'
         />
       </Link>
@@ -32,7 +32,7 @@ const SocialLinks = () => {
           src='/github.svg'
           height={42}
           width={42}
-          style={{ display: "flex", margin: "auto", marginBottom: 10 }}
+          style={{ display: "flex", margin: "auto" }}
           alt='Github Profile'
         />
       </Link>

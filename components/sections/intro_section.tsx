@@ -25,11 +25,12 @@ const IntroSection = () => {
               background: "$lightOrange",
               margin: "auto",
               padding: 0,
-              "@media (max-width: 650px)": {
+              "@media (max-width: 1050px)": {
                 display: "none",
               },
               // paddingRight: 13,
               display: "block",
+
               borderRight: "4px solid $dark",
               width: 66,
               height: "100%",
@@ -68,19 +69,19 @@ const IntroSection = () => {
               //   },
             }}>
             <Spacer
-              y={0}
+              y={2}
               x={0}
-              css={{
-                "@xs": {
-                  height: 30,
-                },
-                "@sm": {
-                  height: 50,
-                },
-                "@md": {
-                  height: 70,
-                },
-              }}
+              // css={{
+              //   "@xs": {
+              //     height: 30,
+              //   },
+              //   "@sm": {
+              //     height: 50,
+              //   },
+              //   "@md": {
+              //     height: 70,
+              //   },
+              // }}
             />
             <Row align='stretch' css={{ margin: 0, padding: 0 }}>
               <Col>
@@ -104,7 +105,7 @@ const IntroSection = () => {
               margin: "auto",
               padding: 0,
               background: "$lightOrange",
-              "@media (max-width: 650px)": {
+              "@media (max-width: 1050px)": {
                 display: "none",
               },
               // paddingRight: 13,
