@@ -23,6 +23,7 @@ const lightTheme = createTheme({
     colors: {
       yellow: "#f2ed72",
       dark: "#2e2e2e",
+      black: "#2e2e2e",
       pink: "#ffb9db",
       lightOrange: "#ffe3ce",
       blue: "#c2f4ff",

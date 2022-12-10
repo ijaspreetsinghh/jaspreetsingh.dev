@@ -8,10 +8,13 @@ import {
   Text,
 } from "@nextui-org/react";
 import Image from "next/image";
+import { Image as NextImage } from "@nextui-org/react";
 import Link from "next/link";
 import { syncopate, robotoMono } from "../../pages/_app";
 import SizedBox from "../ui_components/sized_box";
 import SocialLinks from "../ui_components/social_links";
+
+import introStyle from "./IntroSection.module.css";
 const IntroSection = () => {
   return (
     <Container
@@ -69,7 +72,10 @@ const IntroSection = () => {
               justifyContent: "stretch",
             }}>
             <Spacer y={2} x={0} />
-            <Row align='stretch' css={{ margin: 0, padding: 0 }}>
+            <Row
+              align='stretch'
+              justify='space-between'
+              css={{ margin: 0, padding: 0 }}>
               <Container>
                 <Image
                   alt='object'
@@ -79,11 +85,11 @@ const IntroSection = () => {
                   width={65}
                 />
                 <Spacer y={2} x={0} />
-
                 <Text
                   className={syncopate.className}
                   css={{
                     fontSize: "$4xl",
+                    color: "$black",
                     "@media (max-width: 1250px)": {
                       fontSize: "$3xl",
                     },
@@ -122,13 +128,13 @@ const IntroSection = () => {
                       JASPREET SINGH
                     </Text>
                   </Container>
-                </Row>
+                </Row>{" "}
+                <SizedBox height={10} />
                 <Text className={robotoMono.className} size={"$base"}>
                   Front end developer who writes clean, elegant and efficient
                   code.
                 </Text>
-                <SizedBox height={20} />
-
+                <SizedBox height={30} />
                 <Container
                   css={{
                     border: "4px solid $black",
@@ -206,17 +212,78 @@ const IntroSection = () => {
                     width={104}
                   />
                 </Row>
-
                 <Spacer y={2} x={0} />
               </Container>
-              <Col>
+              <Container
+                css={{
+                  background: "#0091cb",
+                  height: 350,
+                  width: 350,
+                  margin: "auto",
+                  marginRight: 50,
+                  display: "flex",
+                  border: "4px solid $black",
+                  justifyContent: "flex-end",
+                  padding: 0,
+                  "@media (max-width: 1280px)": {
+                    height: 300,
+                    width: 300,
+                  },
+                }}>
                 <Container
                   css={{
-                    background: "red",
-                    height: 400,
-                    width: 500,
-                  }}></Container>
-              </Col>
+                    display: "flex",
+                    flexDirection: "column",
+                    margin: "auto",
+                    padding: 0,
+                  }}>
+                  <Container
+                    css={{
+                      background: "#6be5ef",
+                      height: 350,
+                      width: 350,
+                      display: "flex",
+                      left: 10,
+                      position: "relative",
+                      border: "4px solid $black",
+                      top: 10,
+                      justifyContent: "flex-end",
+                      padding: 0,
+                      "@media (max-width: 1280px)": {
+                        height: 300,
+                        width: 300,
+                      },
+                    }}>
+                    <Container
+                      css={{
+                        height: 350,
+                        position: "relative",
+                        width: 350,
+                        left: 10,
+                        border: "4px solid $black",
+                        top: 10,
+                        display: "flex",
+                        justifyContent: "flex-end",
+                        padding: 0,
+                        margin: 0,
+                        "@media (max-width: 1280px)": {
+                          height: 300,
+                          width: 300,
+                        },
+                      }}>
+                      <NextImage
+                        src={"/hero.png"}
+                        alt='Hero Image'
+                        css={{
+                          margin: 0,
+                          padding: 0,
+                          position: "relative",
+                        }}
+                      />
+                    </Container>
+                  </Container>
+                </Container>
+              </Container>
             </Row>
           </Container>
         </Grid>
