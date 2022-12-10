@@ -191,6 +191,8 @@ const MobNavBar = () => {
           css={{
             borderLeft: "4px solid $black",
 
+            // -ms-overflow-style: none;
+
             borderRight: "4px solid $black",
           }}>
           <Navbar.CollapseItem>

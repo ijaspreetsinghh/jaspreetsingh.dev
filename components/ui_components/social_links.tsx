@@ -47,6 +47,15 @@ const SocialLinks = () => {
           alt='Twitter Profile'
         />
       </Link>
+      <Link href={"mailto:jaspreet.codrity@gmail.com"} about='Email Address'>
+        <Image
+          src='/mail.svg'
+          height={42}
+          width={42}
+          style={{ display: "flex", margin: "auto" }}
+          alt='Email'
+        />
+      </Link>
     </>
   );
 };

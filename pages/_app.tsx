@@ -1,7 +1,7 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import { globalCss } from "@nextui-org/react";
-import { Syncopate } from "@next/font/google";
+import { Syncopate, Roboto_Mono } from "@next/font/google";
 
 import { NextUIProvider, createTheme } from "@nextui-org/react";
 const globalStyles = globalCss({
@@ -42,6 +42,11 @@ export const syncopate = Syncopate({
   weight: "700",
   subsets: ["latin"],
 });
+export const robotoMono = Roboto_Mono({
+  weight: "400",
+  subsets: ["latin"],
+});
+
 export const syncopateLink = Syncopate({
   weight: "700",
 
