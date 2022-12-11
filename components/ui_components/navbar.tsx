@@ -21,7 +21,7 @@ const DesktopNavBar = () => {
       css={{
         background: "$background",
         padding: 0,
-        margin: 0,
+        margin: "auto",
         height: 70,
         border: "4px solid $dark",
         justifyContent: "stretch",
@@ -137,7 +137,7 @@ const MobNavBar = () => {
       css={{
         background: "$background",
         padding: 0,
-        margin: 0,
+        margin: "auto",
         height: 70,
         border: "4px solid $dark",
         justifyContent: "stretch",

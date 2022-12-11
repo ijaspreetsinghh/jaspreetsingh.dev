@@ -6,8 +6,8 @@ const HeroImage = () => {
     <Container
       css={{
         background: "#0091cb",
-        height: 350,
-        width: 350,
+        height: 450,
+        width: 450,
         margin: "auto",
         marginRight: 50,
         display: "flex",
@@ -37,8 +37,8 @@ const HeroImage = () => {
         <Container
           css={{
             background: "#6be5ef",
-            height: 350,
-            width: 350,
+            height: 450,
+            width: 450,
             display: "flex",
             left: 12,
             position: "relative",
@@ -46,6 +46,7 @@ const HeroImage = () => {
             top: 12,
             justifyContent: "center",
             padding: 0,
+
             "@media (max-width: 1280px)": {
               height: 300,
               width: 300,
@@ -61,10 +62,10 @@ const HeroImage = () => {
           }}>
           <Container
             css={{
-              height: 356,
+              height: 456,
               position: "relative",
-              width: 349,
-              left: 12,
+              width: 449,
+              left: 16,
               border: "4px solid $black",
               top: 12,
               display: "flex",
@@ -93,7 +94,7 @@ const HeroImage = () => {
                   JASPREET SINGH
                 </Text>
               }
-              color={"invert"}>
+              color={"secondary"}>
               <Image
                 showSkeleton
                 src={"/hero.png"}
@@ -102,7 +103,8 @@ const HeroImage = () => {
                 css={{
                   justifyContent: "center",
                   margin: 0,
-
+                  height: 448,
+                  width: 450,
                   padding: 0,
 
                   "@media (max-width: 1280px)": {

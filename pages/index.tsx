@@ -9,7 +9,8 @@ export default function Home() {
         css={{
           background: "$blue",
           display: "block",
-
+          maxWidth: 1700,
+          margin: "auto",
           "@media (max-width: 550px)": {
             padding: 0,
             margin: 0,
