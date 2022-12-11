@@ -23,6 +23,7 @@ const SocialLinks = () => {
           target={"_blank"}>
           <Image
             src='/linkedin.svg'
+            draggable={false}
             height={42}
             width={42}
             style={{ display: "flex", margin: "auto" }}
@@ -46,6 +47,7 @@ const SocialLinks = () => {
           about='Instagram Profile Url'>
           <Image
             src='/insta.svg'
+            draggable={false}
             height={42}
             width={42}
             style={{ display: "flex", margin: "auto" }}
@@ -69,6 +71,7 @@ const SocialLinks = () => {
           about='Github Profile Url'>
           <Image
             src='/github.svg'
+            draggable={false}
             height={42}
             width={42}
             style={{ display: "flex", margin: "auto" }}
@@ -92,6 +95,7 @@ const SocialLinks = () => {
           about='Twitter Profile Url'>
           <Image
             src='/twitter.svg'
+            draggable={false}
             height={42}
             width={42}
             style={{ display: "flex", margin: "auto" }}
@@ -112,6 +116,7 @@ const SocialLinks = () => {
         <Link href={"mailto:jaspreet.codrity@gmail.com"} about='Email Address'>
           <Image
             src='/mail.svg'
+            draggable={false}
             height={42}
             width={42}
             style={{ display: "flex", margin: "auto" }}

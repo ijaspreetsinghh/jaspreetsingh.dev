@@ -95,6 +95,7 @@ const IntroSection = () => {
                 <Image
                   alt='object'
                   src='/triangle.svg'
+                  draggable={false}
                   style={{ marginLeft: 20 }}
                   height={59}
                   width={65}
@@ -136,7 +137,7 @@ const IntroSection = () => {
                         className={syncopate.className}
                         css={{ fontSize: 11 }}
                         color={"$white"}>
-                        FRONTEND DEVELOPER
+                        FULLSTACK DEVELOPER
                       </Text>
                     }
                     color={"secondary"}>
@@ -188,7 +189,7 @@ const IntroSection = () => {
                       fontSize: 14,
                     },
                   }}>
-                  Front end developer who writes clean, elegant and efficient
+                  Full-Stack developer who writes clean, elegant and efficient
                   code.
                 </Text>
                 <SizedBox height={30} />
@@ -234,6 +235,7 @@ const IntroSection = () => {
                   <Image
                     alt='object'
                     src='/star_sharp.svg'
+                    draggable={false}
                     style={{
                       display: "block",
                       alignItems: "flex-end",

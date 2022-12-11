@@ -31,7 +31,7 @@ const DownloadCVButton = () => {
           // bottom: 8,
           // left: 8,
           height: 70,
-          boxShadow: isHover ? "0px 0px #fff" : "-12px 12px #fff",
+          boxShadow: isHover ? "0px 0px #2e2e2e" : "-12px 12px #2e2e2e",
           shapeOutside: "initial",
           transitionDuration: ".45s",
 
@@ -39,7 +39,7 @@ const DownloadCVButton = () => {
           paddingLeft: 16,
           paddingRight: 16,
           width: 238,
-          background: "$black",
+          background: "$white",
           display: "flex",
           margin: 0,
           flexDirection: "column",
@@ -53,7 +53,7 @@ const DownloadCVButton = () => {
           <Text
             className={syncopate.className}
             // size={"$md"}
-            color={"$white"}
+            color={"$dark"}
             css={{
               fontSize: 18,
               "@media (max-width: 450px)": {
@@ -64,10 +64,11 @@ const DownloadCVButton = () => {
           </Text>
           <SizedBox width={12} />
           <Image
-            src={"/down.svg"}
+            src={"/arrow_ur.svg"}
+            draggable={false}
             alt={"download cv"}
-            height={18}
-            width={18}
+            height={16}
+            width={16}
             style={{
               display: "flex",
               justifyContent: "center",

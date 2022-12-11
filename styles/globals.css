@@ -7,6 +7,8 @@ body {
     background-color: #c2f4ff;
     scrollbar-width: none;  /* Firefox */
     -ms-overflow-style: none; 
+    scroll-behavior: smooth;
+
 }
 body::-webkit-scrollbar { 
   display: none;  /* Safari and Chrome */
