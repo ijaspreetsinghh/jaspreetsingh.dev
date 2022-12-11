@@ -11,6 +11,7 @@ export default function Home() {
           display: "block",
           maxWidth: 1700,
           margin: "auto",
+          marginTop: 30,
           "@media (max-width: 550px)": {
             padding: 0,
             margin: 0,

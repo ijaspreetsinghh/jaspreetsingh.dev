@@ -97,6 +97,7 @@ const HeroImage = () => {
               color={"secondary"}>
               <Image
                 showSkeleton
+                draggable={false}
                 src={"/hero.png"}
                 objectFit={"fill"}
                 alt='Hero Image'

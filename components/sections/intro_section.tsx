@@ -266,18 +266,38 @@ const IntroSection = () => {
           <Container
             alignItems='center'
             css={{
+              background: "$lightOrange",
               margin: "auto",
               padding: 0,
-              background: "$lightOrange",
               "@media (max-width: 1050px)": {
                 display: "none",
               },
               // paddingRight: 13,
-              display: "block",
+              display: "flex",
+
               borderLeft: "4px solid $dark",
               width: 66,
               height: "100%",
-            }}></Container>
+            }}>
+            {/* <Col
+              css={{
+                margin: "auto",
+                display: "flex",
+                flexDirection: "column",
+                alignContent: "center",
+                alignItems: "center",
+                justifyContent: "center",
+                height: "100%",
+                textOrientation: "upright",
+              }}>
+              <Text
+                className={robotoMono.className}
+                css={{ fontSize: 14, writingMode: "vertical-rl" }}
+                color={"$dark"}>
+                jaspreet.codrity@gmail.com
+              </Text>
+            </Col> */}
+          </Container>
         </Grid>
       </Grid.Container>
     </Container>
