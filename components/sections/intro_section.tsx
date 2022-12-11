@@ -6,15 +6,14 @@ import {
   Row,
   Spacer,
   Text,
+  Tooltip,
 } from "@nextui-org/react";
 import Image from "next/image";
-import { Image as NextImage } from "@nextui-org/react";
-import Link from "next/link";
 import { syncopate, robotoMono } from "../../pages/_app";
 import SizedBox from "../ui_components/sized_box";
 import SocialLinks from "../ui_components/social_links";
 
-import introStyle from "./IntroSection.module.css";
+import HeroImage from "./hero_image";
 const IntroSection = () => {
   return (
     <Container
@@ -71,20 +70,44 @@ const IntroSection = () => {
               margin: 0,
               justifyContent: "stretch",
             }}>
-            <Spacer y={2} x={0} />
+            <Spacer
+              y={0}
+              x={0}
+              css={{
+                height: 40,
+                "@media (max-width: 450px)": {
+                  height: 30,
+                },
+              }}
+            />
             <Row
               align='stretch'
               justify='space-between'
               css={{ margin: 0, padding: 0 }}>
-              <Container>
+              <Container
+                css={{
+                  "@media (max-width: 450px)": {
+                    margin: 0,
+                    padding: 0,
+                  },
+                }}>
                 <Image
                   alt='object'
                   src='/triangle.svg'
-                  style={{ marginLeft: 30 }}
+                  style={{ marginLeft: 20 }}
                   height={59}
                   width={65}
                 />
-                <Spacer y={2} x={0} />
+                <Spacer
+                  y={0}
+                  x={0}
+                  css={{
+                    height: 40,
+                    "@media (max-width: 450px)": {
+                      height: 20,
+                    },
+                  }}
+                />
                 <Text
                   className={syncopate.className}
                   css={{
@@ -93,6 +116,12 @@ const IntroSection = () => {
                     "@media (max-width: 1250px)": {
                       fontSize: "$3xl",
                     },
+                    "@media (max-width: 650px)": {
+                      fontSize: "$2xl",
+                    },
+                    "@media (max-width: 450px)": {
+                      fontSize: "$xl",
+                    },
                     // "@media (max-width: 1050px)": {
                     //   fontSize: "$2xl",
                     // },
@@ -100,95 +129,173 @@ const IntroSection = () => {
                   HI, I&apos;M
                 </Text>
                 <Row align='flex-start'>
-                  <Container
-                    justify='flex-start'
-                    css={{
-                      background: "$yellow",
-                      border: "4px solid $black",
-                      borderRadius: "$pill",
-                      width: "fit-content",
-                      margin: 0,
-                      minWidth: 200,
-                      marginBottom: 10,
-                    }}>
-                    <Text
-                      className={syncopate.className}
+                  <Tooltip
+                    content={
+                      <Text
+                        className={syncopate.className}
+                        css={{ fontSize: 11 }}
+                        color={"$white"}>
+                        FRONTEND DEVELOPER
+                      </Text>
+                    }
+                    color={"invert"}>
+                    <Container
+                      justify='flex-start'
                       css={{
-                        fontSize: "$2xl",
-                        "@media (max-width: 1250px)": {
-                          fontSize: "$xl",
-                        },
-                        "@media (max-width: 1050px)": {
-                          fontSize: "$lg",
-                        },
-                        "@media (max-width: 750px)": {
-                          fontSize: "$lg",
-                        },
+                        background: "$yellow",
+                        border: "4px solid $black",
+                        borderRadius: "$pill",
+                        width: "fit-content",
+                        margin: 0,
+                        minWidth: 200,
+                        marginBottom: 10,
+
+                        // "@media (max-width: 450px)": {
+                        //   fontSize: "$2xl",
+                        // },
                       }}>
-                      JASPREET SINGH
-                    </Text>
-                  </Container>
-                </Row>{" "}
+                      <Text
+                        className={syncopate.className}
+                        css={{
+                          margin: 0,
+                          fontSize: "$2xl",
+                          "@media (max-width: 1250px)": {
+                            fontSize: "$xl",
+                          },
+                          "@media (max-width: 1050px)": {
+                            fontSize: "$lg",
+                          },
+                          "@media (max-width: 750px)": {
+                            fontSize: "$lg",
+                          },
+                          "@media (max-width: 450px)": {
+                            fontSize: "$md",
+                          },
+                        }}>
+                        JASPREET SINGH
+                      </Text>
+                    </Container>
+                  </Tooltip>
+                </Row>
                 <SizedBox height={10} />
-                <Text className={robotoMono.className} size={"$base"}>
+                <Text
+                  className={robotoMono.className}
+                  css={{
+                    margin: 0,
+                    fontSize: "$base",
+                    "@media (max-width: 450px)": {
+                      fontSize: 14,
+                    },
+                  }}>
                   Front end developer who writes clean, elegant and efficient
                   code.
                 </Text>
                 <SizedBox height={30} />
-                <Container
-                  css={{
-                    border: "4px solid $black",
-                    height: 70,
-
-                    width: 238,
-                    padding: 0,
-                    display: "flex",
-                    margin: 0,
-                    background: "$white",
-                    flexDirection: "column",
-                  }}>
-                  <Button
-                    flat
+                <Tooltip
+                  content={
+                    <Text
+                      className={syncopate.className}
+                      css={{ fontSize: 11 }}
+                      color={"$white"}>
+                      DOWNLOAD CV NOW!!
+                    </Text>
+                  }
+                  color={"invert"}>
+                  <Container
                     css={{
-                      position: "relative",
+                      border: "4px solid $black",
                       height: 70,
-                      bottom: 8,
-                      left: 8,
-                      borderRadius: 0,
-                      paddingLeft: 16,
-                      paddingRight: 16,
+
                       width: 238,
-                      background: "$black",
+                      padding: 0,
                       display: "flex",
                       margin: 0,
+                      background: "$white",
                       flexDirection: "column",
-                      // width: "fit-content",
+                      "@media (max-width: 450px)": {
+                        width: 208,
+                        "@media (max-width: 450px)": {
+                          height: 60,
+                        },
+                      },
                     }}>
-                    <Row align='center'>
-                      <Text
-                        className={syncopate.className}
-                        // size={"$md"}
-                        color={"$white"}
-                        css={{ fontSize: 18 }}>
-                        DOWNLOAD CV
-                      </Text>
-                      <SizedBox width={12} />
-                      <Image
-                        src={"/down.svg"}
-                        alt={"download cv"}
-                        height={18}
-                        width={18}
-                        style={{
-                          display: "flex",
-                          justifyContent: "center",
-                          margin: "auto",
-                          flexDirection: "column",
-                        }}
-                      />
-                    </Row>
-                  </Button>
-                </Container>
-                <Spacer y={2} x={0} />
+                    <Button
+                      flat
+                      css={{
+                        position: "relative",
+                        height: 70,
+                        bottom: 8,
+                        left: 8,
+                        borderRadius: 0,
+                        paddingLeft: 16,
+                        paddingRight: 16,
+                        width: 238,
+                        background: "$black",
+                        display: "flex",
+                        margin: 0,
+                        flexDirection: "column",
+                        "@media (max-width: 450px)": {
+                          width: 208,
+                          height: 60,
+                        },
+                        // width: "fit-content",
+                      }}>
+                      <Row align='center'>
+                        <Text
+                          className={syncopate.className}
+                          // size={"$md"}
+                          color={"$white"}
+                          css={{
+                            fontSize: 18,
+                            "@media (max-width: 450px)": {
+                              fontSize: "$md",
+                            },
+                          }}>
+                          DOWNLOAD CV
+                        </Text>
+                        <SizedBox width={12} />
+                        <Image
+                          src={"/down.svg"}
+                          alt={"download cv"}
+                          height={18}
+                          width={18}
+                          style={{
+                            display: "flex",
+                            justifyContent: "center",
+                            margin: "auto",
+                            flexDirection: "column",
+                          }}
+                        />
+                      </Row>
+                    </Button>
+                  </Container>
+                </Tooltip>
+                <Row align='center' css={{ display: "flex", margin: "auto" }}>
+                  <Container
+                    alignItems='center'
+                    css={{
+                      margin: 0,
+                      marginTop: 40,
+                      padding: 0,
+                      background: "$lightOrange",
+                      justifyContent: "center",
+                      display: "none",
+                      "@media (max-width: 960px)": {
+                        display: "flex",
+                      },
+                    }}>
+                    <HeroImage />
+                  </Container>
+                </Row>
+                <Spacer
+                  y={2}
+                  x={0}
+                  css={{
+                    "@media (max-width: 650px)": {
+                      display: "none",
+                    },
+                  }}
+                />
                 <Row
                   align='flex-end'
                   css={{
@@ -196,7 +303,9 @@ const IntroSection = () => {
                     display: "flex",
                     justifyContent: "flex-end",
                     "@media (max-width: 960px)": {
-                      maxWidth: "100%",
+                      // maxWidth: "100%",
+                      display: "none",
+                      // position: "relative",
                     },
                   }}>
                   <Image
@@ -216,73 +325,15 @@ const IntroSection = () => {
               </Container>
               <Container
                 css={{
-                  background: "#0091cb",
-                  height: 350,
-                  width: 350,
-                  margin: "auto",
-                  marginRight: 50,
-                  display: "flex",
-                  border: "4px solid $black",
-                  justifyContent: "flex-end",
+                  margin: 0,
                   padding: 0,
-                  "@media (max-width: 1280px)": {
-                    height: 300,
-                    width: 300,
+                  justifyContent: "center",
+                  display: "flex",
+                  "@media (max-width: 960px)": {
+                    display: "none",
                   },
                 }}>
-                <Container
-                  css={{
-                    display: "flex",
-                    flexDirection: "column",
-                    margin: "auto",
-                    padding: 0,
-                  }}>
-                  <Container
-                    css={{
-                      background: "#6be5ef",
-                      height: 350,
-                      width: 350,
-                      display: "flex",
-                      left: 10,
-                      position: "relative",
-                      border: "4px solid $black",
-                      top: 10,
-                      justifyContent: "flex-end",
-                      padding: 0,
-                      "@media (max-width: 1280px)": {
-                        height: 300,
-                        width: 300,
-                      },
-                    }}>
-                    <Container
-                      css={{
-                        height: 350,
-                        position: "relative",
-                        width: 350,
-                        left: 10,
-                        border: "4px solid $black",
-                        top: 10,
-                        display: "flex",
-                        justifyContent: "flex-end",
-                        padding: 0,
-                        margin: 0,
-                        "@media (max-width: 1280px)": {
-                          height: 300,
-                          width: 300,
-                        },
-                      }}>
-                      <NextImage
-                        src={"/hero.png"}
-                        alt='Hero Image'
-                        css={{
-                          margin: 0,
-                          padding: 0,
-                          position: "relative",
-                        }}
-                      />
-                    </Container>
-                  </Container>
-                </Container>
+                <HeroImage />
               </Container>
             </Row>
           </Container>
