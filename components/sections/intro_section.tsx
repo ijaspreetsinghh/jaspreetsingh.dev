@@ -137,7 +137,7 @@ const IntroSection = () => {
                         className={syncopate.className}
                         css={{ fontSize: 11 }}
                         color={"$white"}>
-                        FULLSTACK DEVELOPER
+                        FLUTTER DEVELOPER
                       </Text>
                     }
                     color={"secondary"}>
@@ -189,7 +189,7 @@ const IntroSection = () => {
                       fontSize: 14,
                     },
                   }}>
-                  Full-Stack developer who writes clean, elegant and efficient
+                  Flutter developer who writes clean, elegant and efficient
                   code.
                 </Text>
                 <SizedBox height={30} />
