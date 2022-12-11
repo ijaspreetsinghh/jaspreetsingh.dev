@@ -33,11 +33,13 @@ class MyDocument extends Document {
           />
           <meta
             name='description'
-            content="I'm Jaspreet Singh! I provide premium application and web development at very affordable costs.Talks about Flutter, React, Next.js, RESTApi, Backend."
+            content="I'm Jaspreet Singh! I provide premium hybrid apps and web app development at affordable costs. talks about Flutter, React, Next.js, RESTApi, and the backend."
           />
           <meta
             property='og:description'
-            content="I'm Jaspreet Singh! I provide premium website and web application development at very affordable costs. I have a comprehensive knowledge of Web/Mobile application development and operations. My engineering background has enabled me to build software with a cyclical design process. I'm very frontend focussed and prefer to work on the front end however I can also manage backend development. I love writing beautiful code and seeing it deployed in applications that help users worldwide. I am adaptable, eager to learn new development tools and enjoy wearing various hats including front-end engineering and back-end engineering."
+            content="
+            I'm Jaspreet Singh! I offer premium hybrid app and web app development at affordable costs. I have comprehensive knowledge of web and mobile application development and operations. My engineering background has enabled me to build software with a cyclical design process. I'm very front-end focused and prefer to work on the front end; however, I can also manage back-end development. I love writing beautiful code and seeing it deployed in applications that help users worldwide. I am adaptable, eager to learn new development tools, and enjoy wearing various hats, including front-end engineering and back-end engineering.
+            "
           />
           <meta property='og:type' content='profile' />
           <meta
