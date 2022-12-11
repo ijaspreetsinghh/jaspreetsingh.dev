@@ -9,12 +9,15 @@ export default function Home() {
         css={{
           background: "$blue",
           display: "block",
+
+          "@media (max-width: 550px)": {
+            padding: 0,
+            margin: 0,
+          },
         }}
         fluid>
-        <div style={{ padding: 4 }}>
-          <MyNavBar />
-          <IntroSection />
-        </div>
+        <MyNavBar />
+        <IntroSection />
       </Container>
     </>
   );

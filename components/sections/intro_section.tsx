@@ -214,9 +214,6 @@ const IntroSection = () => {
                       flexDirection: "column",
                       "@media (max-width: 450px)": {
                         width: 208,
-                        "@media (max-width: 450px)": {
-                          height: 60,
-                        },
                       },
                     }}>
                     <Button
