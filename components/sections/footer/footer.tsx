@@ -84,9 +84,6 @@ const FooterSection = () => {
               style={{
                 margin: 0,
                 padding: 0,
-                position: "relative",
-                top: 3,
-                // left: 6,
                 flexDirection: "column",
                 justifyContent: "center",
                 display: "flex",
@@ -107,7 +104,7 @@ const FooterSection = () => {
               </Text>
             </Link>
             <Text className={robotoMono.className} size={14} color={"$black"}>
-              using
+              using&nbsp;
             </Text>
             <Link
               href={"https://nextjs.org/"}
@@ -121,9 +118,7 @@ const FooterSection = () => {
               style={{
                 margin: 0,
                 padding: 0,
-                position: "relative",
-                top: 3,
-                left: 6,
+
                 flexDirection: "column",
                 justifyContent: "center",
                 display: "flex",
