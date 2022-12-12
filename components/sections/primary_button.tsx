@@ -1,10 +1,27 @@
 import { Button, Container, Row, Tooltip, Text } from "@nextui-org/react";
 import { syncopate } from "../../pages/_app";
 import SizedBox from "../ui_components/sized_box";
-import Image from "next/image";
 import { useState } from "react";
 import { FiArrowUpRight } from "react-icons/fi";
-const DownloadCVButton = () => {
+const PrimaryButton = ({
+  bgColor,
+  textColor,
+  shadowColor,
+  text,
+  tooltipText,
+  tooltipTextColor,
+  tooltipBgColor,
+  onClick,
+}: {
+  bgColor: string;
+  textColor: string;
+  shadowColor: string;
+  text: string;
+  tooltipText: string;
+  tooltipTextColor: string;
+  tooltipBgColor: string;
+  onClick: any;
+}) => {
   const [isHover, setHover] = useState(false);
 
   return (
@@ -12,14 +29,15 @@ const DownloadCVButton = () => {
       content={
         <Text
           className={syncopate.className}
-          css={{ fontSize: 11 }}
+          css={{ fontSize: 11, textTransform: "uppercase" }}
           color={"$white"}>
-          DOWNLOAD CV NOW!!
+          {tooltipText}
         </Text>
       }
       color={"secondary"}>
       <Button
         flat
+        onClick={onClick}
         onMouseOver={(e) => {
           setHover(true);
         }}
@@ -28,46 +46,39 @@ const DownloadCVButton = () => {
         }}
         color={"primary"}
         css={{
-          // position: "relative",
-          // bottom: 8,
-          // left: 8,
-          height: 70,
-          boxShadow: isHover ? "0px 0px #2e2e2e" : "-12px 12px #2e2e2e",
+          boxShadow: isHover
+            ? `0px 0px ${shadowColor}`
+            : `-12px 12px ${shadowColor}`,
           shapeOutside: "initial",
           transitionDuration: ".45s",
 
           borderRadius: 0,
-          paddingLeft: 16,
-          paddingRight: 16,
-          width: 238,
-          background: "$white",
+          padding: 16,
+          background: bgColor,
           display: "flex",
           margin: 0,
+          width: "max-content",
+          height: "fit-content",
           flexDirection: "column",
-          "@media (max-width: 450px)": {
-            width: 208,
-            height: 60,
-          },
-          // width: "fit-content",
         }}>
         <Row align='center'>
           <Text
             className={syncopate.className}
-            // size={"$md"}
-            color={"$dark"}
+            color={textColor}
             css={{
               fontSize: 18,
+              textTransform: "uppercase",
               "@media (max-width: 450px)": {
-                fontSize: "$md",
+                fontSize: 15,
               },
             }}>
-            DOWNLOAD CV
+            {text}
           </Text>
           <SizedBox width={6} />
-          <FiArrowUpRight size={28} color={"#2e2e2e"} />
+          <FiArrowUpRight size={28} color={textColor} />
         </Row>
       </Button>
     </Tooltip>
   );
 };
-export default DownloadCVButton;
+export default PrimaryButton;

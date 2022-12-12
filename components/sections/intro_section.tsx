@@ -12,9 +12,9 @@ import Image from "next/image";
 import { syncopate, robotoMono } from "../../pages/_app";
 import SizedBox from "../ui_components/sized_box";
 import SocialLinks from "../ui_components/social_links";
-import DownloadCVButton from "./download_cv_button";
 
 import HeroImage from "./hero_image";
+import PrimaryButton from "./primary_button";
 const IntroSection = () => {
   return (
     <Container
@@ -193,7 +193,16 @@ const IntroSection = () => {
                   code.
                 </Text>
                 <SizedBox height={30} />
-                <DownloadCVButton />
+                <PrimaryButton
+                  bgColor='white'
+                  shadowColor='black'
+                  textColor='black'
+                  onClick={() => {}}
+                  text='Download Cv'
+                  tooltipBgColor='$black'
+                  tooltipText='Download cv now!!'
+                  tooltipTextColor='$white'
+                />
                 <Row align='center' css={{ display: "flex", margin: "auto" }}>
                   <Container
                     alignItems='center'
