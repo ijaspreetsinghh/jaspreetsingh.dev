@@ -3,6 +3,7 @@ import { syncopate } from "../../pages/_app";
 import SizedBox from "../ui_components/sized_box";
 import Image from "next/image";
 import { useState } from "react";
+import { FiArrowUpRight } from "react-icons/fi";
 const DownloadCVButton = () => {
   const [isHover, setHover] = useState(false);
 
@@ -62,20 +63,8 @@ const DownloadCVButton = () => {
             }}>
             DOWNLOAD CV
           </Text>
-          <SizedBox width={12} />
-          <Image
-            src={"/arrow_ur.svg"}
-            draggable={false}
-            alt={"download cv"}
-            height={16}
-            width={16}
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              margin: "auto",
-              flexDirection: "column",
-            }}
-          />
+          <SizedBox width={6} />
+          <FiArrowUpRight size={28} color={"#2e2e2e"} />
         </Row>
       </Button>
     </Tooltip>

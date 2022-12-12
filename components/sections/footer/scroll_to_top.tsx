@@ -1,6 +1,6 @@
 import { Container } from "@nextui-org/react";
 import { useState } from "react";
-import Image from "next/image";
+import { FiArrowUp } from "react-icons/fi";
 const ScrollToTop = () => {
   const [hoverUp, setHoverUp] = useState(false);
 
@@ -25,7 +25,7 @@ const ScrollToTop = () => {
         right: 8,
         bottom: 5,
         transitionDuration: ".2s",
-        padding: 6,
+        padding: 2.5,
         justifyContent: "center",
         "@media (max-width: 1050px)": {
           display: "block",
@@ -35,7 +35,7 @@ const ScrollToTop = () => {
         width: 40,
         height: 40,
       }}>
-      <Image src='/arrow_up.svg' alt='scroll_up' width={20} height={20} />
+      <FiArrowUp size={28} color={"#fff"} />
     </Container>
   );
 };

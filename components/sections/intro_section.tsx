@@ -58,7 +58,7 @@ const IntroSection = () => {
                 justifyContent: "center",
                 height: "100%",
               }}>
-              <SocialLinks />
+              <SocialLinks bottomMargin={10} />
             </Col>
           </Container>
         </Grid>

@@ -1,7 +1,10 @@
-import { Container, Grid, Image, Col, Text } from "@nextui-org/react";
+import { Container, Grid, Col, Text } from "@nextui-org/react";
 import { useState } from "react";
 import Link from "next/link";
 import { robotoMono, syncopate } from "../../../pages/_app";
+import { FiArrowUp } from "react-icons/fi";
+import { AiFillHeart, AiOutlineCopyright } from "react-icons/ai";
+
 const FooterSection = () => {
   const [hoverNext, setHoverNext] = useState(false);
   const [hoverAuthor, setHoverAuthor] = useState(false);
@@ -65,13 +68,13 @@ const FooterSection = () => {
               justifyContent: "center",
             }}>
             <Text className={robotoMono.className} size={14} color={"$black"}>
-              &copy; Jaspreet | Made with &nbsp;
+              &copy; Jaspreet | Made with
             </Text>
-            <Text className={robotoMono.className} size={14} color={"#ff0000"}>
-              &#10084;
-            </Text>
+            &nbsp;
+            <AiFillHeart size={18} color={"#fd0000"} />
+            &nbsp;
             <Text className={robotoMono.className} size={14} color={"$black"}>
-              &nbsp;by
+              by
             </Text>
             <Link
               href={"https://jaspreetsingh.dev/"}
@@ -159,7 +162,7 @@ const FooterSection = () => {
               margin: "auto",
               cursor: "pointer",
               transitionDuration: ".2s",
-              padding: 16,
+              padding: 12,
               "@media (max-width: 1050px)": {
                 display: "none",
               },
@@ -168,7 +171,7 @@ const FooterSection = () => {
               width: 66,
               height: "100%",
             }}>
-            <Image src='/arrow_up.svg' alt='scroll_up' objectFit='fill' />
+            <FiArrowUp size={38} color={"#fff"} />
           </Container>
         </Grid>
       </Grid.Container>

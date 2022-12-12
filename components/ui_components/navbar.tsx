@@ -11,9 +11,9 @@ import Link from "next/link";
 import { useState } from "react";
 import { syncopateLink } from "../../pages/_app";
 import JaspreetSinghLogo from "./logo";
-import MailIcon from "./mail_icon";
+import { FiMail } from "react-icons/fi";
 import SocialLinks from "./social_links";
-import ThemeIcon from "./theme_icon";
+import { MdVerified } from "react-icons/md";
 
 const DesktopNavBar = () => {
   return (
@@ -34,17 +34,18 @@ const DesktopNavBar = () => {
             alignItems='center'
             css={{
               margin: "auto",
-              padding: 0,
+              padding: 12,
               "@media (max-width: 1050px)": {
                 display: "none",
               },
               // paddingRight: 13,
               display: "block",
+              justifyContent: "center",
               borderRight: "4px solid $dark",
               width: 66,
               height: 66,
             }}>
-            <ThemeIcon />
+            <MdVerified size={36} />
           </Container>
         </Grid>
         <Grid>
@@ -119,9 +120,10 @@ const DesktopNavBar = () => {
               "@media (max-width: 1050px)": {
                 display: "none",
               },
+              justifyContent: "center",
               height: 62,
             }}>
-            <MailIcon />
+            <FiMail size={30} />
           </Container>
         </Grid>
       </Grid.Container>
@@ -280,7 +282,7 @@ const MobNavBar = () => {
 
           <Navbar.CollapseItem>
             <Row align='flex-end' justify='flex-end'>
-              <SocialLinks />
+              <SocialLinks rightMargin={10} />
             </Row>
           </Navbar.CollapseItem>
         </Navbar.Collapse>
