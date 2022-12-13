@@ -22,7 +22,6 @@ const IntroSection = () => {
         background: "$skinColor",
         padding: 0,
         margin: "auto",
-        // height: 70,
         borderBottom: "4px solid $dark",
         borderLeft: "4px solid $dark",
         borderRight: "4px solid $dark",
@@ -199,9 +198,7 @@ const IntroSection = () => {
                   textColor='black'
                   onClick={() => {}}
                   text='Download Cv'
-                  tooltipBgColor='$black'
                   tooltipText='Download cv now!!'
-                  tooltipTextColor='$white'
                 />
                 <Row align='center' css={{ display: "flex", margin: "auto" }}>
                   <Container

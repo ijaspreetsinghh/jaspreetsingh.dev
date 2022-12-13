@@ -9,8 +9,6 @@ const PrimaryButton = ({
   shadowColor,
   text,
   tooltipText,
-  tooltipTextColor,
-  tooltipBgColor,
   onClick,
 }: {
   bgColor: string;
@@ -18,8 +16,7 @@ const PrimaryButton = ({
   shadowColor: string;
   text: string;
   tooltipText: string;
-  tooltipTextColor: string;
-  tooltipBgColor: string;
+
   onClick: any;
 }) => {
   const [isHover, setHover] = useState(false);

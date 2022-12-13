@@ -1,7 +1,6 @@
 import { Col, Container, Grid, Row, Spacer, Text } from "@nextui-org/react";
 import Head from "next/head";
 import FooterSection from "../components/sections/footer/footer";
-import ScrollToTop from "../components/sections/footer/scroll_to_top";
 import PrimaryButton from "../components/sections/primary_button";
 import MyNavBar from "../components/ui_components/navbar";
 import SizedBox from "../components/ui_components/sized_box";
@@ -128,9 +127,7 @@ export default function Custom404() {
                         router.push("/");
                       }}
                       text='Take me home'
-                      tooltipBgColor='$black'
                       tooltipText='Go to home!!'
-                      tooltipTextColor='$white'
                     />
                   </Row>
                   <SizedBox height={20} />
@@ -184,7 +181,6 @@ export default function Custom404() {
         </Container>
         <FooterSection />
       </Container>
-      <ScrollToTop />
     </>
   );
 }

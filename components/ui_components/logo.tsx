@@ -9,7 +9,6 @@ const JaspreetSinghLogo = () => {
         draggable={false}
         width={245}
         height={32}
-        // autoResize={true}
       />
     </Link>
   );

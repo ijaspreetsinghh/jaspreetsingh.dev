@@ -32,7 +32,7 @@ const SocialLinks = ({
           about='LinkedIn Profile Url'
           style={{ marginBottom: bottomMargin, marginRight: rightMargin }}
           target={"_blank"}>
-          <FiLinkedin size={28} />
+          <FiLinkedin size={28} color={"#2e2e2e"} />
         </Link>
       </Tooltip>
       <Tooltip
@@ -50,7 +50,7 @@ const SocialLinks = ({
           target={"_blank"}
           style={{ marginBottom: bottomMargin, marginRight: rightMargin }}
           about='Instagram Profile Url'>
-          <FiInstagram size={28} />
+          <FiInstagram size={28} color={"#2e2e2e"} />
         </Link>
       </Tooltip>
       <Tooltip
@@ -68,7 +68,7 @@ const SocialLinks = ({
           href={"https://github.com/ijaspreetsinghh"}
           style={{ marginBottom: bottomMargin, marginRight: rightMargin }}
           about='Github Profile Url'>
-          <FiGithub size={28} />
+          <FiGithub size={28} color={"#2e2e2e"} />
         </Link>
       </Tooltip>
       <Tooltip
@@ -86,7 +86,7 @@ const SocialLinks = ({
           style={{ marginBottom: bottomMargin, marginRight: rightMargin }}
           target={"_blank"}
           about='Twitter Profile Url'>
-          <FiTwitter size={28} />
+          <FiTwitter size={28} color={"#2e2e2e"} />
         </Link>
       </Tooltip>
       <Tooltip
@@ -100,7 +100,7 @@ const SocialLinks = ({
         }
         color={"secondary"}>
         <Link href={"mailto:jaspreet.codrity@gmail.com"} about='Email Address'>
-          <FiMail size={28} />
+          <FiMail size={28} color={"#2e2e2e"} />
         </Link>
       </Tooltip>
     </>
