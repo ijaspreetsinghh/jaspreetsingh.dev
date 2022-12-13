@@ -1,11 +1,19 @@
-import { Col, Container, Grid, Row, Spacer, Text } from "@nextui-org/react";
+import {
+  Col,
+  Container,
+  Grid,
+  Image,
+  Row,
+  Spacer,
+  Text,
+} from "@nextui-org/react";
 import Head from "next/head";
 import FooterSection from "../components/sections/footer/footer";
 import PrimaryButton from "../components/sections/primary_button";
 import MyNavBar from "../components/ui_components/navbar";
 import SizedBox from "../components/ui_components/sized_box";
 import SocialLinks from "../components/ui_components/social_links";
-import { syncopate } from "./_app";
+import { robotoMono, syncopate } from "./_app";
 import { useRouter } from "next/router";
 export default function Custom404() {
   const router = useRouter();
@@ -49,7 +57,7 @@ export default function Custom404() {
               <Container
                 alignItems='center'
                 css={{
-                  background: "$lightOrange",
+                  background: "$blue",
                   margin: "auto",
                   padding: 0,
                   "@media (max-width: 1050px)": {
@@ -66,13 +74,23 @@ export default function Custom404() {
                   css={{
                     margin: "auto",
                     display: "flex",
-                    flexDirection: "column",
+
                     alignContent: "center",
                     alignItems: "center",
                     justifyContent: "center",
-                    height: "100%",
                   }}>
-                  <SocialLinks bottomMargin={10} />
+                  <Text
+                    className={syncopate.className}
+                    css={{
+                      fontSize: 16,
+                      color: "$black",
+                      textTransform: "uppercase",
+                      writingMode: "vertical-lr",
+                      textOrientation: "sideways",
+                      transform: "rotate(-180deg)",
+                    }}>
+                    Error
+                  </Text>
                 </Col>
               </Container>
             </Grid>
@@ -80,7 +98,7 @@ export default function Custom404() {
             <Grid xs>
               <Container
                 css={{
-                  background: "$lightOrange",
+                  background: "$blue",
                   display: "flex",
                   margin: "auto",
                   padding: 0,
@@ -94,15 +112,15 @@ export default function Custom404() {
                     display: "flex",
                     flexDirection: "column",
                   }}>
-                  <Spacer
+                  <SizedBox height={20} />
+                  <Image
+                    src='/404.svg'
+                    alt='404'
                     css={{
-                      height: 90,
-                      "@media (max-width: 850px)": {
-                        height: 50,
-                      },
-                      "@media (max-width: 650px)": {
-                        height: 30,
-                      },
+                      maxHeight: 200,
+                      padding: 0,
+                      paddingLeft: 16,
+                      paddingRight: 16,
                     }}
                   />
                   <Text
@@ -110,13 +128,48 @@ export default function Custom404() {
                     css={{
                       textAlign: "center",
                       fontSize: 36,
-                      "@media (max-width: 500px)": {
+                      textTransform: "uppercase",
+                      "@media (max-width: 650px)": {
                         fontSize: 24,
+                      },
+
+                      "@media (max-width: 400px)": {
+                        fontSize: 20,
                       },
                     }}
                     color={"$black"}>
-                    Not Found
+                    Page Not Found
                   </Text>
+                  <Row
+                    align='center'
+                    justify='center'
+                    css={{
+                      width: 500,
+                      display: "flex",
+                      margin: "auto",
+
+                      "@media (max-width: 750px)": {
+                        width: 460,
+                      },
+                      "@media (max-width: 500px)": {
+                        width: "100%",
+                      },
+                    }}>
+                    <Text
+                      className={robotoMono.className}
+                      css={{
+                        textAlign: "center",
+                        fontSize: "$base",
+                        // textTransform: "uppercase",
+                        "@media (max-width: 500px)": {
+                          fontSize: "$base",
+                        },
+                      }}
+                      color={"$black"}>
+                      It is a long established fact that reader will be
+                      distracted readable content of when looking.
+                    </Text>
+                  </Row>
                   <SizedBox height={20} />
                   <Row align='center' justify='center'>
                     <PrimaryButton
@@ -126,7 +179,7 @@ export default function Custom404() {
                       onClick={() => {
                         router.push("/");
                       }}
-                      text='Take me home'
+                      text='Go to home'
                       tooltipText='Go to home!!'
                     />
                   </Row>
@@ -150,13 +203,12 @@ export default function Custom404() {
               <Container
                 alignItems='center'
                 css={{
-                  background: "$lightOrange",
+                  background: "$blue",
                   margin: "auto",
                   padding: 0,
                   "@media (max-width: 1050px)": {
                     display: "none",
                   },
-                  // paddingRight: 13,
                   display: "flex",
 
                   borderLeft: "4px solid $dark",
@@ -173,7 +225,17 @@ export default function Custom404() {
                     justifyContent: "center",
                     height: "100%",
                   }}>
-                  <SocialLinks bottomMargin={10} />
+                  <Text
+                    className={syncopate.className}
+                    css={{
+                      fontSize: 16,
+                      color: "$black",
+                      textTransform: "uppercase",
+                      writingMode: "vertical-lr",
+                      textOrientation: "sideways",
+                    }}>
+                    Error
+                  </Text>
                 </Col>
               </Container>
             </Grid>

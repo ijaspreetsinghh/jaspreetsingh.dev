@@ -4,8 +4,6 @@ import FooterSection from "../components/sections/footer/footer";
 import IntroSection from "../components/sections/intro_section";
 import ServicesSection from "../components/sections/services_section/services_section";
 import MyNavBar from "../components/ui_components/navbar";
-import { syncopate } from "./_app";
-
 export default function Home() {
   return (
     <>
@@ -32,18 +30,6 @@ export default function Home() {
           },
         }}
         fluid>
-        <Text
-          className={syncopate.className}
-          css={{
-            fontSize: 18,
-            color: "$white",
-            marginBottom: 20,
-            background: "#ad1710",
-            textAlign: "center",
-            textTransform: "uppercase",
-          }}>
-          Partial Build
-        </Text>
         <MyNavBar />
         <IntroSection />
         <ServicesSection />

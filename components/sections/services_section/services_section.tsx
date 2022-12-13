@@ -50,7 +50,7 @@ const ServicesSection = () => {
               <Text
                 className={syncopate.className}
                 css={{
-                  fontSize: 14,
+                  fontSize: 16,
                   color: "$black",
 
                   textTransform: "uppercase",
@@ -367,7 +367,7 @@ const ServicesSection = () => {
               <Text
                 className={syncopate.className}
                 css={{
-                  fontSize: 14,
+                  fontSize: 16,
                   color: "$black",
                   textTransform: "uppercase",
                   writingMode: "vertical-lr",
