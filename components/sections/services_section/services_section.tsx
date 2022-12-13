@@ -4,6 +4,7 @@ import GearIcon from "../../ui_components/gear_icon";
 import SizedBox from "../../ui_components/sized_box";
 import ServiceComponent from "./service_component";
 import { HiOutlineCode } from "react-icons/hi";
+import { CgWebsite } from "react-icons/cg";
 import { MdOutlineDesignServices } from "react-icons/md";
 
 const ServicesSection = () => {
@@ -226,7 +227,7 @@ const ServicesSection = () => {
                 rightBorder={true}
                 topBorder={true}
                 icon={
-                  <HiOutlineCode
+                  <CgWebsite
                     size={48}
                     style={{
                       display: "flex",
