@@ -6,8 +6,8 @@ const HeroImage = () => {
     <Container
       css={{
         background: "#0091cb",
-        height: 450,
-        width: 450,
+        height: 400,
+        width: 400,
         margin: "auto",
         marginRight: 50,
         display: "flex",
@@ -37,8 +37,8 @@ const HeroImage = () => {
         <Container
           css={{
             background: "#6be5ef",
-            height: 450,
-            width: 450,
+            height: 400,
+            width: 400,
             display: "flex",
             left: 12,
             position: "relative",
@@ -62,9 +62,9 @@ const HeroImage = () => {
           }}>
           <Container
             css={{
-              height: 456,
+              height: 400,
               position: "relative",
-              width: 449,
+              width: 400,
               left: 16,
               border: "4px solid $black",
               top: 12,
@@ -98,14 +98,14 @@ const HeroImage = () => {
               <Image
                 showSkeleton
                 draggable={false}
-                src={"/hero.png"}
+                src={"/hero.jpg"}
                 objectFit={"fill"}
                 alt='Hero Image'
                 css={{
                   justifyContent: "center",
                   margin: 0,
-                  height: 448,
-                  width: 450,
+                  height: 392,
+                  width: 400,
                   padding: 0,
 
                   "@media (max-width: 1280px)": {

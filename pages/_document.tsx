@@ -37,9 +37,7 @@ class MyDocument extends Document {
           />
           <meta
             property='og:description'
-            content="
-            I'm Jaspreet Singh! I offer premium hybrid app and web app development at affordable costs. I have comprehensive knowledge of web and mobile application development and operations. My engineering background has enabled me to build software with a cyclical design process. I'm very front-end focused and prefer to work on the front end; however, I can also manage back-end development. I love writing beautiful code and seeing it deployed in applications that help users worldwide. I am adaptable, eager to learn new development tools, and enjoy wearing various hats, including front-end engineering and back-end engineering.
-            "
+            content="I'm Jaspreet Singh! I offer premium hybrid app and web app development at affordable costs. I have comprehensive knowledge of web and mobile application development and operations. My engineering background has enabled me to build software with a cyclical design process. I'm very front-end focused and prefer to work on the front end; however, I can also manage back-end development. I love writing beautiful code and seeing it deployed in applications that help users worldwide. I am adaptable, eager to learn new development tools, and enjoy wearing various hats, including front-end engineering and back-end engineering."
           />
           <meta property='og:type' content='profile' />
           <meta

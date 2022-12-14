@@ -99,7 +99,7 @@ const ServicesSection = () => {
                 },
               }}>
               <GearIcon height={56} width={56} />
-            </Container>{" "}
+            </Container>
             <Spacer
               y={0}
               css={{
@@ -353,31 +353,7 @@ const ServicesSection = () => {
               borderLeft: "4px solid $dark",
               width: 66,
               height: "100%",
-            }}>
-            <Col
-              css={{
-                margin: "auto",
-                display: "flex",
-                flexDirection: "column",
-                alignContent: "center",
-                alignItems: "center",
-                justifyContent: "center",
-                height: "100%",
-                textOrientation: "upright",
-              }}>
-              <Text
-                className={syncopate.className}
-                css={{
-                  fontSize: 16,
-                  color: "$black",
-                  textTransform: "uppercase",
-                  writingMode: "vertical-lr",
-                  textOrientation: "sideways",
-                }}>
-                What i Can Do For You
-              </Text>
-            </Col>
-          </Container>
+            }}></Container>
         </Grid>
       </Grid.Container>
     </Container>

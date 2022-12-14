@@ -1,5 +1,7 @@
 import { Col, Container, Text } from "@nextui-org/react";
 import Head from "next/head";
+import AboutMain from "../components/sections/about/about_main";
+import AboutStarter from "../components/sections/about/about_starter";
 import FooterSection from "../components/sections/footer/footer";
 import IntroSection from "../components/sections/intro_section";
 import ServicesSection from "../components/sections/services_section/services_section";
@@ -13,7 +15,6 @@ export default function Home() {
           name='title'
           content='Jaspreet Singh | Flutter Developer Portfolio'
         />
-
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
       </Head>
       <Container
@@ -32,6 +33,8 @@ export default function Home() {
         fluid>
         <MyNavBar />
         <IntroSection />
+        <AboutStarter />
+        <AboutMain />
         <ServicesSection />
         <FooterSection />
       </Container>
