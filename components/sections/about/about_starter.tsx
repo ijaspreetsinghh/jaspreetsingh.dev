@@ -1,5 +1,6 @@
-import { Col, Container, Grid, Spacer, Text } from "@nextui-org/react";
+import { Col, Container, Grid, Row, Spacer, Text } from "@nextui-org/react";
 import { syncopate } from "../../../pages/_app";
+import Image from "next/image";
 const AboutStarter = () => {
   return (
     <Container
@@ -86,32 +87,75 @@ const AboutStarter = () => {
                 },
               }}
             />
-            <Text
-              className={syncopate.className}
-              color={"$black"}
-              css={{
-                fontSize: "$3xl",
-                textTransform: "uppercase",
-                width: 500,
-                display: "flex",
-                zIndex: 2,
-                margin: "auto",
-                textAlign: "center",
-                "@media (max-width: 650px)": {
-                  fontSize: "$2xl",
-                  width: 400,
-                },
-                "@media (max-width: 450px)": {
-                  fontSize: "$xl",
-                  width: 300,
-                },
-                "@media (max-width: 350px)": {
-                  fontSize: "$lg",
-                  width: "100%",
-                },
-              }}>
-              One of the best flutter developer
-            </Text>
+            <Row>
+              {" "}
+              <Container
+                css={{
+                  margin: 0,
+                  padding: 0,
+                  position: "absolute",
+                  left: 30,
+                  bottom: -50,
+                  width: 80,
+                  height: 80,
+                  "@media (max-width: 600px)": {
+                    display: "none",
+                  },
+                }}>
+                <Image
+                  src={"/zigzag.svg"}
+                  alt='star_shape'
+                  height={80}
+                  width={80}
+                />
+              </Container>
+              <Text
+                className={syncopate.className}
+                color={"$black"}
+                css={{
+                  fontSize: "$3xl",
+                  textTransform: "uppercase",
+                  width: 500,
+                  display: "flex",
+                  zIndex: 2,
+                  margin: "auto",
+                  textAlign: "center",
+                  "@media (max-width: 650px)": {
+                    fontSize: "$2xl",
+                    width: 400,
+                  },
+                  "@media (max-width: 450px)": {
+                    fontSize: "$xl",
+                    width: 300,
+                  },
+                  "@media (max-width: 350px)": {
+                    fontSize: "$lg",
+                    width: "100%",
+                  },
+                }}>
+                One of the best flutter developer
+              </Text>
+              <Container
+                css={{
+                  margin: 0,
+                  padding: 0,
+                  position: "absolute",
+                  right: 30,
+                  top: -50,
+                  width: 100,
+                  height: 100,
+                  "@media (max-width: 600px)": {
+                    display: "none",
+                  },
+                }}>
+                <Image
+                  src={"/star_sharp.svg"}
+                  alt='star_shape'
+                  height={100}
+                  width={100}
+                />
+              </Container>
+            </Row>
 
             <Spacer
               y={0}
@@ -120,10 +164,6 @@ const AboutStarter = () => {
                 "@media (max-width: 650px)": {
                   fontSize: "$xl",
                   height: 50,
-                },
-                "@media (max-width: 450px)": {
-                  fontSize: "$xl",
-                  height: 30,
                 },
               }}
             />
