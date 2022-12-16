@@ -5,15 +5,17 @@ import AboutStarter from "../components/sections/about/about_starter";
 import FooterSection from "../components/sections/footer/footer";
 import IntroSection from "../components/sections/intro_section";
 import ServicesSection from "../components/sections/services_section/services_section";
+import AllTechnologies from "../components/sections/techs/all_techs";
+import TechStarter from "../components/sections/techs/techs_starter";
 import MyNavBar from "../components/ui_components/navbar";
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Jaspreet Singh | Flutter Developer Portfolio</title>
+        <title>Jaspreet Singh | Full-Stack Developer Portfolio</title>
         <meta
           name='title'
-          content='Jaspreet Singh | Flutter Developer Portfolio'
+          content='Jaspreet Singh | Full-Stack Developer Portfolio'
         />
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
       </Head>
@@ -35,6 +37,8 @@ export default function Home() {
         <IntroSection />
         <AboutStarter />
         <AboutMain />
+        <TechStarter />
+        <AllTechnologies />
         <ServicesSection />
         <FooterSection />
       </Container>

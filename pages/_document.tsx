@@ -29,7 +29,7 @@ class MyDocument extends Document {
           <meta property='og:url' content='https://jaspreetsingh.dev' />
           <meta
             name='keywords'
-            content='Flutter, Flutter Developer, Flutter Developer, Experienced Flutter Developer React.js, Next.js, Node.js, Full-time Flutter Developer.'
+            content='Flutter, Flutter Developer, Flutter Developer,Full-Stack Developer,Experienced Full-Stack Developer, Experienced Flutter Developer React.js, Next.js, Node.js, Full-time Flutter Developer.'
           />
           <meta
             name='description'
@@ -42,7 +42,7 @@ class MyDocument extends Document {
           <meta property='og:type' content='profile' />
           <meta
             property='og:image'
-            content='https://raw.githubusercontent.com/ijaspreetsinghh/jaspreetsingh.dev/main/hero.png?token=GHSAT0AAAAAABZEZIJLZY3JVOLMCNPVSFTCY4WA47Q'
+            content='https://raw.githubusercontent.com/ijaspreetsinghh/jaspreetsingh.dev/main/hero.png'
           />
         </Head>
         <body>

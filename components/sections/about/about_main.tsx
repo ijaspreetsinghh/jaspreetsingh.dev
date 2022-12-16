@@ -8,6 +8,7 @@ import {
   Image,
 } from "@nextui-org/react";
 import { robotoMono, syncopate } from "../../../pages/_app";
+import SizedBox from "../../ui_components/sized_box";
 import PrimaryButton from "../primary_button";
 
 const AboutInfoComponent = () => {
@@ -58,16 +59,22 @@ const AboutInfoComponent = () => {
         I&apos;m very front-end focused and prefer to work on the front end;
         however, I can also manage back-end development.
       </Text>
-      <Row justify='center'>
-        <PrimaryButton
-          bgColor='black'
-          shadowColor='#c2f4ff'
-          textColor='white'
-          onClick={() => {}}
-          text='Download Cv'
-          tooltipText='Download cv now!!'
-        />
-      </Row>
+      <Text
+        className={robotoMono.className}
+        color={"$black"}
+        css={{
+          fontSize: "$base",
+          marginTop: 24,
+          marginBottom: 24,
+          "@media (max-width: 650px)": {
+            marginTop: 16,
+          },
+        }}>
+        I have several years of experience in product development engineering in
+        a variety of industries, including payment and financial, as well as pos
+        and investment. Products and projects varied from simple designs to
+        elaborate, complex ones.
+      </Text>
     </Col>
   );
 };
@@ -168,7 +175,7 @@ const AboutMain = () => {
                   }}>
                   <Container
                     css={{
-                      background: "$lightOrange",
+                      background: "#ffe3ce",
                       height: 400,
                       width: 385,
                       padding: 0,
@@ -212,6 +219,17 @@ const AboutMain = () => {
                       />
                     </Container>
                   </Container>
+                  <SizedBox height={30} />
+                  <Row justify='center'>
+                    <PrimaryButton
+                      bgColor='black'
+                      shadowColor='#c2f4ff'
+                      textColor='white'
+                      onClick={() => {}}
+                      text='Download Cv'
+                      tooltipText='Download cv now!!'
+                    />
+                  </Row>
                 </Col>
                 <Container
                   css={{

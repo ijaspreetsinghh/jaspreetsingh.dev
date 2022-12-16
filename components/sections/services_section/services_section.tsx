@@ -3,9 +3,11 @@ import { robotoMono, syncopate } from "../../../pages/_app";
 import GearIcon from "../../ui_components/gear_icon";
 import SizedBox from "../../ui_components/sized_box";
 import ServiceComponent from "./service_component";
-import { HiOutlineCode } from "react-icons/hi";
+import { HiOutlineCode, HiOutlineDatabase } from "react-icons/hi";
 import { CgWebsite } from "react-icons/cg";
 import { MdOutlineDesignServices } from "react-icons/md";
+import { AiOutlineApi } from "react-icons/ai";
+import { GiProtectionGlasses } from "react-icons/gi";
 
 const ServicesSection = () => {
   return (
@@ -198,13 +200,12 @@ const ServicesSection = () => {
                 },
               }}>
               <ServiceComponent
-                title='App Development'
-                bottomBorder={false}
+                title='Native Apps'
+                desc='I build cross-platform (Android,iOS,Windows,MacOS, Web,Linux) Apps using Flutter.'
+                bottomBorder={true}
                 leftBorder={false}
                 rightBorder={false}
                 topBorder={true}
-                desc='I build cross-platform (Android,iOS,Windows,MacOS, Web,Linux) Apps using
-        Flutter.'
                 height={270}
                 width='34%'
                 icon={
@@ -219,10 +220,10 @@ const ServicesSection = () => {
                 }
               />
               <ServiceComponent
-                title='Website / Web App'
-                desc='I build responsive websites / web apps using Flutter, Next.js, React etc.'
+                title='Responsive Web'
+                desc='I build responsive websites and web apps using Next.js, React, Javascript, Typescript.'
                 height={270}
-                bottomBorder={false}
+                bottomBorder={true}
                 leftBorder={true}
                 rightBorder={true}
                 topBorder={true}
@@ -239,9 +240,79 @@ const ServicesSection = () => {
                 width='34%'
               />
               <ServiceComponent
+                title='Baas services'
+                desc='I have great experience with BaaS like Supabase, Firebase, etc. I can easily manage projects of any complexity.'
+                height={270}
+                bottomBorder={true}
+                leftBorder={false}
+                rightBorder={false}
+                topBorder={true}
+                icon={
+                  <HiOutlineDatabase
+                    size={48}
+                    style={{
+                      display: "flex",
+                      margin: "auto",
+                      marginTop: 12,
+                    }}
+                  />
+                }
+                width='34%'
+              />
+            </Row>
+            <SizedBox height={80} />
+            <Row
+              css={{
+                margin: 0,
+                padding: 0,
+                width: "100%",
+                "@media (max-width: 960px)": {
+                  display: "none",
+                },
+              }}>
+              <ServiceComponent
+                title='api Development'
+                desc='I can build secure and scalable REST APIs in Node. JS, Deno, and Python.'
+                bottomBorder={false}
+                leftBorder={false}
+                rightBorder={false}
+                topBorder={true}
+                height={270}
+                width='34%'
+                icon={
+                  <AiOutlineApi
+                    size={48}
+                    style={{
+                      display: "flex",
+                      margin: "auto",
+                      marginTop: 12,
+                    }}
+                  />
+                }
+              />
+              <ServiceComponent
+                title='prototyping'
+                desc='I can build prototypes for any kind of application quickly.'
+                height={270}
+                bottomBorder={false}
+                leftBorder={true}
+                rightBorder={true}
+                topBorder={true}
+                icon={
+                  <GiProtectionGlasses
+                    size={48}
+                    style={{
+                      display: "flex",
+                      margin: "auto",
+                      marginTop: 12,
+                    }}
+                  />
+                }
+                width='34%'
+              />
+              <ServiceComponent
                 title='UI/UX Designing'
-                desc="Although I'm mainly a flutter developer but I
-                do care about the UI/UX. Hence, I also do UI designing for applications."
+                desc="Although I'm mainly a  developer, I do care about the UI and UX. Hence, I also do UI design for applications."
                 height={270}
                 bottomBorder={false}
                 leftBorder={false}
@@ -269,16 +340,15 @@ const ServicesSection = () => {
                 "@media (max-width: 960px)": {
                   display: "block",
                 },
-                background: "red",
               }}>
+              {" "}
               <ServiceComponent
-                title='App Development'
-                bottomBorder={false}
+                title='Native Apps'
+                desc='I build cross-platform (Android,iOS,Windows,MacOS, Web,Linux) Apps using Flutter.'
+                bottomBorder={true}
                 leftBorder={false}
                 rightBorder={false}
                 topBorder={true}
-                desc='I build cross-platform (Android,iOS,Windows,MacOS, Web,Linux) Apps using
-        Flutter.'
                 height={270}
                 width='100%'
                 icon={
@@ -293,15 +363,75 @@ const ServicesSection = () => {
                 }
               />
               <ServiceComponent
-                title='Website / Web App'
-                desc='I build responsive websites / web apps using Flutter, Next.js, React etc.'
+                title='Responsive Web'
+                desc='I build responsive websites and web apps using Next.js, React, Javascript, Typescript.'
+                height={270}
+                bottomBorder={false}
+                leftBorder={false}
+                rightBorder={false}
+                topBorder={false}
+                icon={
+                  <CgWebsite
+                    size={48}
+                    style={{
+                      display: "flex",
+                      margin: "auto",
+                      marginTop: 12,
+                    }}
+                  />
+                }
+                width='100%'
+              />
+              <ServiceComponent
+                title='Baas services'
+                desc='I have great experience with BaaS like Supabase, Firebase, etc. I can easily manage projects of any complexity.'
                 height={270}
                 bottomBorder={false}
                 leftBorder={false}
                 rightBorder={false}
                 topBorder={true}
                 icon={
-                  <HiOutlineCode
+                  <HiOutlineDatabase
+                    size={48}
+                    style={{
+                      display: "flex",
+                      margin: "auto",
+                      marginTop: 12,
+                    }}
+                  />
+                }
+                width='100%'
+              />
+              <ServiceComponent
+                title='api Development'
+                desc='I can build secure and scalable REST APIs in Node. JS, Deno, and Python.'
+                bottomBorder={false}
+                leftBorder={false}
+                rightBorder={false}
+                topBorder={true}
+                height={270}
+                width='100%'
+                icon={
+                  <AiOutlineApi
+                    size={48}
+                    style={{
+                      display: "flex",
+                      margin: "auto",
+                      marginTop: 12,
+                    }}
+                  />
+                }
+              />
+              <ServiceComponent
+                title='prototyping'
+                desc='I can build prototypes for any kind of application quickly.'
+                height={270}
+                bottomBorder={false}
+                leftBorder={false}
+                rightBorder={false}
+                topBorder={true}
+                icon={
+                  <GiProtectionGlasses
                     size={48}
                     style={{
                       display: "flex",
@@ -314,8 +444,7 @@ const ServicesSection = () => {
               />
               <ServiceComponent
                 title='UI/UX Designing'
-                desc="Although I'm mainly a flutter developer but I
-                do care about the UI/UX. Hence, I also do UI designing for applications."
+                desc="Although I'm mainly a  developer, I do care about the UI and UX. Hence, I also do UI design for applications."
                 height={270}
                 bottomBorder={false}
                 leftBorder={false}

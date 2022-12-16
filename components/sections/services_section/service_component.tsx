@@ -32,7 +32,7 @@ const ServiceComponent = ({
         setHover(false);
       }}
       css={{
-        background: isHover ? "$lightOrange" : "$white",
+        background: isHover ? "#ffe3ce" : "$white",
         transition: "background-color 0.15s ease",
 
         margin: 0,

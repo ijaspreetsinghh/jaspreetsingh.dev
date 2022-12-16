@@ -1,11 +1,11 @@
 import { Col, Container, Grid, Row, Spacer, Text } from "@nextui-org/react";
 import { syncopate } from "../../../pages/_app";
 import Image from "next/image";
-const AboutStarter = () => {
+const TechStarter = () => {
   return (
     <Container
       css={{
-        background: "#daf6cc",
+        background: "#fff2d9",
         padding: 0,
         margin: "auto",
 
@@ -17,12 +17,12 @@ const AboutStarter = () => {
         marginBottom: 0,
       }}
       fluid>
-      <Grid.Container css={{ background: "#daf6cc" }}>
+      <Grid.Container css={{ background: "#fff2d9" }}>
         <Grid>
           <Container
             alignItems='center'
             css={{
-              background: "#daf6cc",
+              background: "#fff2d9",
               margin: "auto",
               padding: 0,
               "@media (max-width: 1050px)": {
@@ -56,7 +56,7 @@ const AboutStarter = () => {
                   textOrientation: "sideways",
                   transform: "rotate(-180deg)",
                 }}>
-                About me
+                My skills
               </Text>
             </Col>
           </Container>
@@ -65,7 +65,7 @@ const AboutStarter = () => {
         <Grid xs>
           <Container
             css={{
-              background: "#daf6cc",
+              background: "#fff2d9",
               display: "block",
               margin: "auto",
               padding: 0,
@@ -103,7 +103,7 @@ const AboutStarter = () => {
                   },
                 }}>
                 <Image
-                  src={"/zigzag.svg"}
+                  src={"/real_star.svg"}
                   alt='star_shape'
                   height={80}
                   width={80}
@@ -133,7 +133,7 @@ const AboutStarter = () => {
                     width: "100%",
                   },
                 }}>
-                One of the best Full-Stack developer
+                try everything but keep the good
               </Text>
               <Container
                 css={{
@@ -149,10 +149,10 @@ const AboutStarter = () => {
                   },
                 }}>
                 <Image
-                  src={"/star_sharp.svg"}
+                  src={"/heart.svg"}
                   alt='star_shape'
-                  height={100}
-                  width={100}
+                  height={80}
+                  width={80}
                 />
               </Container>
             </Row>
@@ -178,7 +178,7 @@ const AboutStarter = () => {
               document.documentElement.scrollTop = 0;
             }}
             css={{
-              background: "#daf6cc",
+              background: "#fff2d9",
               margin: "auto",
               cursor: "pointer",
               transitionDuration: ".2s",
@@ -197,4 +197,4 @@ const AboutStarter = () => {
   );
 };
 
-export default AboutStarter;
+export default TechStarter;

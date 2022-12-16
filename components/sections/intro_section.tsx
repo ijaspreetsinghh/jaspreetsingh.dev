@@ -29,12 +29,12 @@ const IntroSection = () => {
         display: "flex",
       }}
       fluid>
-      <Grid.Container css={{ background: "$lightOrange" }}>
+      <Grid.Container css={{ background: "#ffe3ce" }}>
         <Grid>
           <Container
             alignItems='center'
             css={{
-              background: "$lightOrange",
+              background: "#ffe3ce",
               margin: "auto",
               padding: 0,
               "@media (max-width: 1050px)": {
@@ -65,7 +65,7 @@ const IntroSection = () => {
         <Grid xs>
           <Container
             css={{
-              background: "$lightOrange",
+              background: "#ffe3ce",
               display: "block",
               margin: 0,
               justifyContent: "stretch",
@@ -136,7 +136,7 @@ const IntroSection = () => {
                         className={syncopate.className}
                         css={{ fontSize: 11 }}
                         color={"$white"}>
-                        FLUTTER DEVELOPER
+                        FULL-STACK DEVELOPER
                       </Text>
                     }
                     color={"secondary"}>
@@ -188,7 +188,7 @@ const IntroSection = () => {
                       fontSize: 14,
                     },
                   }}>
-                  Flutter developer who writes clean, elegant and efficient
+                  Full-Stack developer who writes clean, elegant and efficient
                   code.
                 </Text>
                 <SizedBox height={30} />
@@ -207,7 +207,7 @@ const IntroSection = () => {
                       margin: 0,
                       marginTop: 40,
                       padding: 0,
-                      background: "$lightOrange",
+                      background: "#ffe3ce",
                       justifyContent: "center",
                       display: "none",
                       "@media (max-width: 960px)": {
@@ -274,7 +274,7 @@ const IntroSection = () => {
           <Container
             alignItems='center'
             css={{
-              background: "$lightOrange",
+              background: "#ffe3ce",
               margin: "auto",
               padding: 0,
               "@media (max-width: 1050px)": {

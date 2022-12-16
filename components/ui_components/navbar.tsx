@@ -204,7 +204,6 @@ const MobNavBar = () => {
                 minWidth: "100%",
                 display: "flex",
                 justifyContent: "flex-end",
-                // background: "red",
 
                 margin: "auto",
               }}
@@ -225,7 +224,6 @@ const MobNavBar = () => {
                 minWidth: "100%",
                 display: "flex",
                 justifyContent: "flex-end",
-                // background: "red",
 
                 margin: "auto",
               }}
@@ -246,7 +244,7 @@ const MobNavBar = () => {
                 minWidth: "100%",
                 display: "flex",
                 justifyContent: "flex-end",
-                // background: "red",
+
                 margin: "auto",
               }}
               href='#'>
@@ -266,7 +264,6 @@ const MobNavBar = () => {
                 minWidth: "100%",
                 display: "flex",
                 justifyContent: "flex-end",
-                // background: "red",
 
                 margin: "auto",
               }}
