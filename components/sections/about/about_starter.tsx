@@ -88,7 +88,6 @@ const AboutStarter = () => {
               }}
             />
             <Row>
-              {" "}
               <Container
                 css={{
                   margin: 0,

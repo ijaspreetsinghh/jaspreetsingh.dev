@@ -88,7 +88,6 @@ const TechStarter = () => {
               }}
             />
             <Row>
-              {" "}
               <Container
                 css={{
                   margin: 0,

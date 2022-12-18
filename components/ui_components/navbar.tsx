@@ -192,7 +192,6 @@ const MobNavBar = () => {
           // isOpen={isOpen}
           css={{
             borderLeft: "4px solid $black",
-
             // -ms-overflow-style: none;
 
             borderRight: "4px solid $black",

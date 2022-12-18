@@ -12,7 +12,7 @@ import Image from "next/image";
 import { syncopate, robotoMono } from "../../pages/_app";
 import SizedBox from "../ui_components/sized_box";
 import SocialLinks from "../ui_components/social_links";
-
+import Link from "next/link";
 import HeroImage from "./hero_image";
 import PrimaryButton from "./primary_button";
 const IntroSection = () => {
@@ -192,14 +192,16 @@ const IntroSection = () => {
                   code.
                 </Text>
                 <SizedBox height={30} />
-                <PrimaryButton
-                  bgColor='white'
-                  shadowColor='black'
-                  textColor='black'
-                  onClick={() => {}}
-                  text='Download Cv'
-                  tooltipText='Download cv now!!'
-                />
+                <Link href={"https://www.linkedin.com/in/ijaspreetsinghh/"}>
+                  <PrimaryButton
+                    bgColor='white'
+                    shadowColor='black'
+                    textColor='black'
+                    onClick={() => {}}
+                    text='Contact Me'
+                    tooltipText='Chat on Linkedin!!'
+                  />
+                </Link>
                 <Row align='center' css={{ display: "flex", margin: "auto" }}>
                   <Container
                     alignItems='center'

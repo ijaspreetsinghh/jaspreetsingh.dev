@@ -124,7 +124,7 @@ const AllTechnologies = () => {
                   text='TypeScript'
                   imageSource='/skills/typescript.svg'
                 />
-              </Grid>{" "}
+              </Grid>
               <Grid>
                 <TechnologyCapsule
                   text='Nextui'
@@ -139,7 +139,7 @@ const AllTechnologies = () => {
               </Grid>
               <Grid>
                 <TechnologyCapsule text='HTML' imageSource='/skills/html.svg' />
-              </Grid>{" "}
+              </Grid>
               <Grid>
                 <TechnologyCapsule text='css' imageSource='/skills/css.svg' />
               </Grid>

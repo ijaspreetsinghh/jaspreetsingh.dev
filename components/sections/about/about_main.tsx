@@ -10,7 +10,7 @@ import {
 import { robotoMono, syncopate } from "../../../pages/_app";
 import SizedBox from "../../ui_components/sized_box";
 import PrimaryButton from "../primary_button";
-
+import Link from "next/link";
 const AboutInfoComponent = () => {
   return (
     <Col>
@@ -221,14 +221,17 @@ const AboutMain = () => {
                   </Container>
                   <SizedBox height={30} />
                   <Row justify='center'>
-                    <PrimaryButton
-                      bgColor='black'
-                      shadowColor='#c2f4ff'
-                      textColor='white'
-                      onClick={() => {}}
-                      text='Download Cv'
-                      tooltipText='Download cv now!!'
-                    />
+                    <Link href={"https://www.linkedin.com/in/ijaspreetsinghh/"}>
+                      {" "}
+                      <PrimaryButton
+                        bgColor='black'
+                        shadowColor='#c2f4ff'
+                        textColor='white'
+                        onClick={() => {}}
+                        text='Contact Me'
+                        tooltipText='Chat on Linkedin!!'
+                      />
+                    </Link>
                   </Row>
                 </Col>
                 <Container

@@ -341,7 +341,6 @@ const ServicesSection = () => {
                   display: "block",
                 },
               }}>
-              {" "}
               <ServiceComponent
                 title='Native Apps'
                 desc='I build cross-platform (Android,iOS,Windows,MacOS, Web,Linux) Apps using Flutter.'

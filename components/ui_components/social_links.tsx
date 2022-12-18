@@ -8,6 +8,7 @@ import {
   FiGithub,
   FiTwitter,
 } from "react-icons/fi";
+import SizedBox from "./sized_box";
 const SocialLinks = ({
   bottomMargin,
   rightMargin,
@@ -30,11 +31,14 @@ const SocialLinks = ({
         <Link
           href={"https://www.linkedin.com/in/ijaspreetsinghh/"}
           about='LinkedIn Profile Url'
-          style={{ marginBottom: bottomMargin, marginRight: rightMargin }}
+          style={{}}
           target={"_blank"}>
           <FiLinkedin size={28} color={"#2e2e2e"} />
         </Link>
       </Tooltip>
+
+      <SizedBox height={bottomMargin} width={rightMargin} />
+
       <Tooltip
         content={
           <Text
@@ -53,6 +57,9 @@ const SocialLinks = ({
           <FiInstagram size={28} color={"#2e2e2e"} />
         </Link>
       </Tooltip>
+
+      <SizedBox height={bottomMargin} width={rightMargin} />
+
       <Tooltip
         content={
           <Text
@@ -71,6 +78,9 @@ const SocialLinks = ({
           <FiGithub size={28} color={"#2e2e2e"} />
         </Link>
       </Tooltip>
+
+      <SizedBox height={bottomMargin} width={rightMargin} />
+
       <Tooltip
         content={
           <Text
@@ -89,6 +99,9 @@ const SocialLinks = ({
           <FiTwitter size={28} color={"#2e2e2e"} />
         </Link>
       </Tooltip>
+
+      <SizedBox height={bottomMargin} width={rightMargin} />
+
       <Tooltip
         content={
           <Text
