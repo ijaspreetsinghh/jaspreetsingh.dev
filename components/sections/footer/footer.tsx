@@ -4,6 +4,7 @@ import Link from "next/link";
 import { robotoMono, syncopate } from "../../../pages/_app";
 import { FiArrowUp } from "react-icons/fi";
 import { AiFillHeart } from "react-icons/ai";
+import SocialLinks from "../../ui_components/social_links";
 
 const FooterSection = () => {
   const [hoverNext, setHoverNext] = useState(false);
@@ -176,6 +177,26 @@ const FooterSection = () => {
             </Container>
           </Grid>
         </Grid.Container>
+      </Container>{" "}
+      <Container
+        alignContent='center'
+        css={{
+          background: "$white",
+          display: "none",
+          margin: "auto",
+          padding: 0,
+          height: 62,
+          paddingLeft: 12,
+          borderBottom: "4px solid $dark",
+          borderLeft: "4px solid $dark",
+          borderRight: "4px solid $dark",
+          paddingRight: 12,
+          justifyContent: "center",
+          "@media (max-width: 1050px)": {
+            display: "flex",
+          },
+        }}>
+        <SocialLinks rightMargin={10} />
       </Container>
     </footer>
   );
