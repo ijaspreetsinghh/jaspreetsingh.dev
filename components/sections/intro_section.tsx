@@ -192,7 +192,13 @@ const IntroSection = () => {
                   code.
                 </Text>
                 <SizedBox height={30} />
-                <Link href={"https://www.linkedin.com/in/ijaspreetsinghh/"}>
+                <Link
+                  href={"https://www.linkedin.com/in/ijaspreetsinghh/"}
+                  style={{
+                    display: "flex",
+                    margin: 0,
+                    width: "fit-content",
+                  }}>
                   <PrimaryButton
                     bgColor='white'
                     shadowColor='black'
