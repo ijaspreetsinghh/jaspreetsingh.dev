@@ -1,3 +1,4 @@
+"use client";
 import { Col, Container, Grid, Row, Spacer, Text } from "@nextui-org/react";
 import { syncopate } from "../../../pages/_app";
 import Image from "next/image";
@@ -172,14 +173,10 @@ const TechStarter = () => {
         <Grid>
           <Container
             alignItems='center'
-            onClick={() => {
-              document.body.scrollTop = 0; // For Safari
-              document.documentElement.scrollTop = 0;
-            }}
             css={{
               background: "#fff2d9",
               margin: "auto",
-              cursor: "pointer",
+
               transitionDuration: ".2s",
               padding: 12,
               "@media (max-width: 1050px)": {

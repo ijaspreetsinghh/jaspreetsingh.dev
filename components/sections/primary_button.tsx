@@ -45,7 +45,7 @@ const PrimaryButton = ({
         css={{
           boxShadow: isHover
             ? `0px 0px ${shadowColor}`
-            : `-12px 12px ${shadowColor}`,
+            : `-12px 8px ${shadowColor}`,
           shapeOutside: "initial",
           transitionDuration: ".45s",
 

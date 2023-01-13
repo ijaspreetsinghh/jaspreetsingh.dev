@@ -1,3 +1,4 @@
+"use client";
 import { Button, Container, Row, Image, Text } from "@nextui-org/react";
 import { useState } from "react";
 import { syncopate } from "../../../pages/_app";

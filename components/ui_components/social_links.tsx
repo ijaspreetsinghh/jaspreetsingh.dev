@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import { Tooltip, Text } from "@nextui-org/react";
 import { robotoMono } from "../../pages/_app";

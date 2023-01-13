@@ -1,7 +1,10 @@
+"use client";
 import { Col, Container, Text } from "@nextui-org/react";
 import Head from "next/head";
 import AboutMain from "../components/sections/about/about_main";
 import AboutStarter from "../components/sections/about/about_starter";
+import ContactMain from "../components/sections/contact/contact_main";
+import ContactStarter from "../components/sections/contact/contact_starter";
 import FooterSection from "../components/sections/footer/footer";
 import IntroSection from "../components/sections/intro_section";
 import ServicesSection from "../components/sections/services_section/services_section";
@@ -40,6 +43,8 @@ export default function Home() {
         <TechStarter />
         <AllTechnologies />
         <ServicesSection />
+        <ContactStarter />
+        <ContactMain />
         <FooterSection />
       </Container>
     </>

@@ -2,11 +2,11 @@
 import { Col, Container, Grid, Row, Spacer, Text } from "@nextui-org/react";
 import { syncopate } from "../../../pages/_app";
 import Image from "next/image";
-const AboutStarter = () => {
+const ContactStarter = () => {
   return (
     <Container
       css={{
-        background: "#daf6cc",
+        background: "#ffe3ce",
         padding: 0,
         margin: "auto",
 
@@ -18,12 +18,12 @@ const AboutStarter = () => {
         marginBottom: 0,
       }}
       fluid>
-      <Grid.Container css={{ background: "#daf6cc" }}>
+      <Grid.Container css={{ background: "#ffe3ce" }}>
         <Grid>
           <Container
             alignItems='center'
             css={{
-              background: "#daf6cc",
+              background: "#ffe3ce",
               margin: "auto",
               padding: 0,
               "@media (max-width: 1050px)": {
@@ -57,7 +57,7 @@ const AboutStarter = () => {
                   textOrientation: "sideways",
                   transform: "rotate(-180deg)",
                 }}>
-                About me
+                contact
               </Text>
             </Col>
           </Container>
@@ -66,7 +66,7 @@ const AboutStarter = () => {
         <Grid xs>
           <Container
             css={{
-              background: "#daf6cc",
+              background: "#ffe3ce",
               display: "block",
               margin: "auto",
               padding: 0,
@@ -103,7 +103,7 @@ const AboutStarter = () => {
                   },
                 }}>
                 <Image
-                  src={"/zigzag.svg"}
+                  src={"/star_sharp.svg"}
                   alt='star_shape'
                   height={80}
                   width={80}
@@ -115,25 +115,25 @@ const AboutStarter = () => {
                 css={{
                   fontSize: "$3xl",
                   textTransform: "uppercase",
-                  width: 500,
+                  // width: "100%",
                   display: "flex",
                   zIndex: 2,
                   margin: "auto",
                   textAlign: "center",
                   "@media (max-width: 650px)": {
                     fontSize: "$2xl",
-                    width: 400,
+                    // width: "100%",
                   },
                   "@media (max-width: 450px)": {
                     fontSize: "$xl",
-                    width: 300,
+                    // width: "100%",
                   },
                   "@media (max-width: 350px)": {
                     fontSize: "$lg",
-                    width: "100%",
+                    // width: "100%",
                   },
                 }}>
-                One of the best Full-Stack developer
+                Get in touch
               </Text>
               <Container
                 css={{
@@ -149,7 +149,7 @@ const AboutStarter = () => {
                   },
                 }}>
                 <Image
-                  src={"/star_sharp.svg"}
+                  src={"/polygon.svg"}
                   alt='star_shape'
                   height={100}
                   width={100}
@@ -174,7 +174,7 @@ const AboutStarter = () => {
           <Container
             alignItems='center'
             css={{
-              background: "#daf6cc",
+              background: "#ffe3ce",
               margin: "auto",
 
               transitionDuration: ".2s",
@@ -193,4 +193,4 @@ const AboutStarter = () => {
   );
 };
 
-export default AboutStarter;
+export default ContactStarter;

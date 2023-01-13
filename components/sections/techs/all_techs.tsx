@@ -1,3 +1,4 @@
+"use client";
 import {
   Col,
   Container,
@@ -7,9 +8,7 @@ import {
   Text,
   Image,
 } from "@nextui-org/react";
-import { robotoMono, syncopate } from "../../../pages/_app";
-import SizedBox from "../../ui_components/sized_box";
-import PrimaryButton from "../primary_button";
+import { syncopate } from "../../../pages/_app";
 import TechnologyCapsule from "./technology_capsule";
 
 const AllTechnologies = () => {
@@ -252,14 +251,10 @@ const AllTechnologies = () => {
         <Grid>
           <Container
             alignItems='center'
-            onClick={() => {
-              document.body.scrollTop = 0; // For Safari
-              document.documentElement.scrollTop = 0;
-            }}
             css={{
               background: "$white",
               margin: "auto",
-              cursor: "pointer",
+
               transitionDuration: ".2s",
               padding: 12,
               "@media (max-width: 1050px)": {

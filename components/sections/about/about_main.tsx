@@ -1,3 +1,4 @@
+"use client";
 import {
   Col,
   Container,
@@ -276,14 +277,10 @@ const AboutMain = () => {
         <Grid>
           <Container
             alignItems='center'
-            onClick={() => {
-              document.body.scrollTop = 0; // For Safari
-              document.documentElement.scrollTop = 0;
-            }}
             css={{
               background: "$white",
               margin: "auto",
-              cursor: "pointer",
+
               transitionDuration: ".2s",
               padding: 12,
               "@media (max-width: 1050px)": {

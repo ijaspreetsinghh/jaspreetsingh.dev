@@ -1,3 +1,4 @@
+"use client";
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import { globalCss } from "@nextui-org/react";

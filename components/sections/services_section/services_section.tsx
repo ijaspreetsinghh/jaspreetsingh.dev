@@ -1,3 +1,4 @@
+"use client";
 import { Col, Container, Grid, Row, Spacer, Text } from "@nextui-org/react";
 import { robotoMono, syncopate } from "../../../pages/_app";
 import GearIcon from "../../ui_components/gear_icon";

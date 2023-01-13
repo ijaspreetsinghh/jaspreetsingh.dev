@@ -1,3 +1,4 @@
+"use client";
 import Document, {
   Html,
   Head,

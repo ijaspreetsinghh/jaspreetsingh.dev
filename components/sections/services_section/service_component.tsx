@@ -1,3 +1,4 @@
+"use client";
 import { Container, Spacer, Text } from "@nextui-org/react";
 import { robotoMono, syncopate } from "../../../pages/_app";
 import { useState } from "react";

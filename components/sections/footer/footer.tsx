@@ -1,3 +1,4 @@
+"use client";
 import { Container, Grid, Col, Text } from "@nextui-org/react";
 import { useState } from "react";
 import Link from "next/link";
