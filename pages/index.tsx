@@ -10,6 +10,8 @@ import IntroSection from "../components/sections/intro_section";
 import ServicesSection from "../components/sections/services_section/services_section";
 import AllTechnologies from "../components/sections/techs/all_techs";
 import TechStarter from "../components/sections/techs/techs_starter";
+import WorkMain from "../components/sections/works/works_main";
+import WorkStarter from "../components/sections/works/work_starter";
 import MyNavBar from "../components/ui_components/navbar";
 export default function Home() {
   return (
@@ -43,6 +45,8 @@ export default function Home() {
         <TechStarter />
         <AllTechnologies />
         <ServicesSection />
+        <WorkStarter />
+        <WorkMain />
         <ContactStarter />
         <ContactMain />
         <FooterSection />
