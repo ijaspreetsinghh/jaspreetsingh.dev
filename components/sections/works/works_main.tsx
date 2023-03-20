@@ -73,6 +73,33 @@ const Work = ({
 
 const WorkMain = () => {
   const items = [
+
+
+
+
+
+
+    {
+      title: "Super Bird",
+      link: "https://play.google.com/store/apps/details?id=dev.jaspreetsingh.flappybird",
+      description:
+        "A worldwide Super Bird craze was started by this incredibly addictive arcade game. To move through each series of pipes, you must act rapidly. Timing is important if you want to keep flying and earn a good score. Don't crash as you pass through the pipes!",
+    },
+    {
+      title: "Tic Tac Toe: 3×3",
+      link: "https://play.google.com/store/apps/details?id=dev.jaspreetsingh.tictactoe",
+      description:
+        "Looking for a fun and challenging game to play on your mobile device? Look no further than Tic Tac Toe: 3×3. This classic game has been entertaining players of all ages for decades and now you can enjoy it on the go.",
+    },
+    {
+      title: "QR & Barcode Scanner",
+      link: "https://play.google.com/store/apps/details?id=dev.jaspreetsingh.qrscan",
+      description:
+        "QR & Barcode Scanner is a modern QR code scanner and barcode scanner with all the features you need.",
+    },
+
+
+
     {
       title: "PetsPOS with AI",
       link: "https://petsposai.web.app/",
