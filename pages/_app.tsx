@@ -41,18 +41,3 @@ const lightTheme = createTheme({
     fonts: {},
   },
 });
-
-export const syncopate = Syncopate({
-  weight: "700",
-  subsets: ["latin"],
-});
-export const robotoMono = Roboto_Mono({
-  weight: "400",
-  subsets: ["latin"],
-});
-
-export const syncopateLink = Syncopate({
-  weight: "700",
-
-  subsets: ["latin"],
-});

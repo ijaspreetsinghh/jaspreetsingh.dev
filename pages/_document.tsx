@@ -30,7 +30,7 @@ class MyDocument extends Document {
           <meta property='og:url' content='https://jaspreetsingh.dev' />
           <meta
             name='keywords'
-            content='Flutter, Flutter Developer, Flutter Developer,Full-Stack Developer,Experienced Full-Stack Developer, Experienced Flutter Developer React.js, Next.js, Node.js, Full-time Flutter Developer.'
+            content='Flutter, Flutter Developer, Flutter Developer,Software Engineer,Experienced Software Engineer, Experienced Flutter Developer React.js, Next.js, Node.js, Full-time Flutter Developer.'
           />
           <meta
             name='description'
