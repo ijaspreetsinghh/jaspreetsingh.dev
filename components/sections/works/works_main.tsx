@@ -76,7 +76,12 @@ const WorkMain = () => {
 
 
 
-
+    {
+      title: "Wordle!",
+      link: "https://wordle-8331d.web.app/#/",
+      description:
+        "Wordle is a popular online word-guessing game where players attempt to guess a five-letter word within a limited number of attempts by receiving feedback on the correctness of their guesses.",
+    },
 
 
     {
