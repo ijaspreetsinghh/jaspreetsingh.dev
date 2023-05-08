@@ -75,7 +75,12 @@ const WorkMain = () => {
   const items = [
 
 
-
+    {
+      title: "El-Sudoku",
+      link: "https://el-sudoku.vercel.app/",
+      description:
+        "El-Sudoku is a popular puzzle game that involves filling a 9x9 grid with numbers from 1 to 9 in such a way that each row, column, and 3x3 sub-grid contains all the numbers from 1 to 9 without any repetition. The game requires logic, deduction, and problem-solving skills to solve, and is often enjoyed by people of all ages as a form of mental exercise and entertainment.",
+    },
     {
       title: "Wordle!",
       link: "https://wordle-8331d.web.app/#/",
