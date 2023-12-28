@@ -74,7 +74,17 @@ const Work = ({
 const WorkMain = () => {
   const items = [
 
-
+{
+      title: "Voicify!",
+      link: "https://play.google.com/store/apps/details?id=tech.abps.voicify",
+      description:
+        "🎤 Transform your spoken words into text seamlessly with Voicify! Perfect for classrooms, conferences, or personal notes, Voicify offers real-time speech-to-text conversion without storing your audio. Keep your thoughts private as the app stores only local text, giving you complete control over your transcriptions.",
+    },{
+      title: "Todolist",
+      link: "https://play.google.com/store/apps/details?id=tech.abps.todolist",
+      description:
+        "ToDoList - the ultimate app for streamlined task management. Effortlessly add and schedule tasks with just a few taps, ensuring you stay on top of your deadlines. With its clean and minimalistic design, the app provides a distraction-free environment for optimal focus on your priorities.",
+    },
     {
       title: "El-Sudoku",
       link: "https://el-sudoku.vercel.app/",
@@ -94,12 +104,6 @@ const WorkMain = () => {
       link: "https://play.google.com/store/apps/details?id=dev.jaspreetsingh.flappybird",
       description:
         "A worldwide Super Bird craze was started by this incredibly addictive arcade game. To move through each series of pipes, you must act rapidly. Timing is important if you want to keep flying and earn a good score. Don't crash as you pass through the pipes!",
-    },
-    {
-      title: "Tic Tac Toe: 3×3",
-      link: "https://play.google.com/store/apps/details?id=dev.jaspreetsingh.tictactoe",
-      description:
-        "Looking for a fun and challenging game to play on your mobile device? Look no further than Tic Tac Toe: 3×3. This classic game has been entertaining players of all ages for decades and now you can enjoy it on the go.",
     },
     {
       title: "QR & Barcode Scanner",
