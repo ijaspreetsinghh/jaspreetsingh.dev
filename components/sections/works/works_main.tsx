@@ -75,6 +75,13 @@ const WorkMain = () => {
   const items = [
 
 {
+      title: "TheOOwl",
+      link: "https://www.theoowl.com/",
+      description:
+        "Octo Owl, a visionary artist whose talents span the spectrum of abstract painting, canvas painting, and the intricate world of tattoo artistry.",
+    },
+    
+    {
       title: "Voicify!",
       link: "https://play.google.com/store/apps/details?id=tech.abps.voicify",
       description:
