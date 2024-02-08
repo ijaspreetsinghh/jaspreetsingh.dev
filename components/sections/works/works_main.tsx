@@ -74,7 +74,16 @@ const Work = ({
 const WorkMain = () => {
   const items = [
 
-{
+
+    
+    
+    {
+      title: "Threads Clone- The streamlined platform for creating engaging threads",
+      link: "https://threads-five-inky.vercel.app/",
+      description:
+        "Threads is a vibrant Threads(Meta)-like platform where you can create and share threads on any topic that interests you. Its made with Nextjs, MongoDB, Clerk Auth, Tailwind Css etc." ,
+    },
+    {
       title: "TheOOwl",
       link: "https://www.theoowl.com/",
       description:
