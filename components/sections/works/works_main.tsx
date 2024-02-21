@@ -76,7 +76,12 @@ const WorkMain = () => {
 
 
     
-    
+    {
+      title: "Imaginify- AI Image transformations",
+      link: "https://imaginify-v1.vercel.app/",
+      description:
+        "Imaginify leverages the power of Cloudinary advanced AI capabilities to offer seamless image transformations. With Cloudinary AI integration, unlock limitless possibilities for enhancing and optimizing your images with precision and efficiency." ,
+    },
     {
       title: "Threads Clone- The streamlined platform for creating engaging threads",
       link: "https://threads-five-inky.vercel.app/",
